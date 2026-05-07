@@ -1,0 +1,27 @@
+variant,member,operation_id,description,stock_id,qty,length_in,width_in,thickness_in,total_bdft,notes
+V1+V2+V3+V4,Standard,S-SIDE-01,"Side panel rough cut, jointed both edges",black walnut 4/4 S2S,2,18.5,12.5,0.875,5.06,"Rough +0.5 in oversize all around; mill to 18 x 12 x 0.75 in final"
+V1+V2+V3+V4,Standard,S-TOP-01,"Top (seat) panel rough cut",black walnut 4/4 S2S,1,12.5,12.5,0.875,1.69,
+V1+V2+V3+V4,Standard,S-BOT-01,"Bottom panel rough cut",black walnut 4/4 S2S,1,12.5,12.5,0.875,1.69,
+V1+V2+V3+V4,Standard,S-BACK-01,"Back panel cut",Baltic birch 1/2 in,1,18.0,12.0,0.50,n/a,"Cut to size; sound-hole routed in CNC step S-BACK-02"
+V1+V2+V3+V4,Standard,S-BACK-02,"Sound hole, 4.5 in dia, centred L-R, 1/3 H from top",Baltic birch 1/2 in,1,n/a,n/a,n/a,n/a,"Hole saw or CNC pocket; deburr both sides"
+V1+V2+V3+V4,Standard,S-TAPA-01,"Tapa face cut to size",Baltic birch 3 mm,1,18.0,12.0,0.118,n/a,"Cut OVERSIZE +0.06 in; trim flush after assembly"
+V1+V2+V3+V4,Standard,S-GB-01,"Internal corner glue-blocks (8x triangular)",walnut offcut,8,17.0,1.0,1.0,n/a,"Length matches panel height; glued into all 8 internal corners"
+V1+V2+V3+V4,Standard,S-FOOT-01,"Rubber foot install",rubber 1/2 in,4,n/a,n/a,n/a,n/a,"Self-adhesive; one in each corner of bottom panel"
+V1,Standard,S-V1-01,"Finger-joint pockets, top + bottom + sides corners",machined panels,4,n/a,n/a,n/a,n/a,"3/8 in fingers, parametric width; CNC route OR table-saw jig; 8 corner pairs"
+V2,Standard,S-V2-01,"Half-blind dovetail layout, top + bottom + sides corners",machined panels,4,n/a,n/a,n/a,n/a,"CNC half-blind; pin spacing per drawing 06"
+V3,Standard,S-V3-01,"Rabbet cut, all 4 corners (top+bottom into sides)",machined panels,4,n/a,n/a,n/a,n/a,"3/8 deep x 3/4 wide; table-saw or router"
+V4,Standard,S-V4-01,"Miter cut at 45 deg on all corner edges",machined panels,4,n/a,n/a,n/a,n/a,"Table saw with 45 deg sled; verify squareness"
+V4,Standard,S-V4-02,"Spline slot, 1/8 in x 0.6 in deep, 3 per corner",miter glued shell,12,n/a,n/a,n/a,n/a,"Spline jig on table saw; contrasting maple slips inserted glued"
+V1+V2+V3+V4,Standard,S-INLAY-01,"CNC inlay pocket, side panel A (mandala or geometric)",walnut side panel,1,n/a,n/a,n/a,n/a,"BEFORE assembly; depth 0.080 in; TBN 12.4 deg bit"
+V1+V2+V3+V4,Standard,S-INLAY-02,"CNC inlay pocket, side panel B (mirrored or alternate)",walnut side panel,1,n/a,n/a,n/a,n/a,"Mirror or independent pattern"
+V1+V2+V3+V4,Standard,S-INLAY-03,"CNC inlay pocket, back panel (rosette around sound hole)",Baltic birch back,1,n/a,n/a,n/a,n/a,"Optional aesthetic; rosette only — keep tapa clean"
+V1+V2+V3+V4,Standard,S-INLAY-04,"CNC inlay insert, maple, mandala",maple inlay blank,1,n/a,n/a,n/a,n/a,"POSITIVE of pocket; oversized for press-fit"
+V1+V2+V3+V4,Standard,S-INLAY-05,"CNC inlay insert, yellowheart accent",yellowheart blank,1,n/a,n/a,n/a,n/a,"Smaller accent insert"
+V1+V2+V3+V4,Standard,S-SNARE-B,"Snare mount block, 8-12 deg angled face",maple offcut,1,5.0,1.0,1.0,n/a,"Glued and screwed to inside of back panel; tuner pegs through back"
+V1+V2+V3+V4,Standard,S-FIN-01,"Sand body to 220 grit",glued shell,1,n/a,n/a,n/a,n/a,"Random-orbit then hand-sand corners"
+V1+V2+V3+V4,Standard,S-FIN-02,"Apply tung oil to tapa, 2 coats",finished tapa,1,n/a,n/a,n/a,n/a,"24 hr cure between coats"
+V1+V2+V3+V4,Standard,S-FIN-03,"Apply Arm-R-Seal satin to body, 3 coats",finished shell,1,n/a,n/a,n/a,n/a,"Light scuff between coats"
+V1+V2+V3+V4,Compact,C-SIDE-01,"Side panel rough cut",black walnut 4/4 S2S,2,15.5,11.5,0.75,3.71,"For Compact build; mill to 15 x 11 x 0.625 in final"
+V1+V2+V3+V4,Compact,C-TAPA-01,"Tapa face Compact",Baltic birch 3 mm,1,15.0,11.0,0.118,n/a,
+V1+V2+V3+V4,Bass,B-SIDE-01,"Side panel rough cut",black walnut 4/4 S2S,2,22.5,14.5,0.875,7.13,"For Bass build; mill to 22 x 14 x 0.75 in final"
+V1+V2+V3+V4,Bass,B-TAPA-01,"Tapa face Bass",Baltic birch 3 mm,1,22.0,14.0,0.118,n/a,

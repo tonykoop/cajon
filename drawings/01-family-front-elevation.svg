@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" font-family="Inter, sans-serif">
+  <defs>
+    <pattern id="walnut" patternUnits="userSpaceOnUse" width="6" height="6" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#5b3a1c" stroke-width="0.5" opacity="0.4"/>
+    </pattern>
+    <pattern id="ply" patternUnits="userSpaceOnUse" width="4" height="4">
+      <line x1="0" y1="0" x2="4" y2="0" stroke="#caa56a" stroke-width="0.4" opacity="0.5"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="1200" height="800" fill="#fcf9f1"/>
+
+  <!-- Title -->
+  <text x="600" y="42" text-anchor="middle" font-size="22" font-weight="bold" fill="#2b2417">CAJÓN FAMILY — FRONT ELEVATION</text>
+  <text x="600" y="64" text-anchor="middle" font-size="12" fill="#6b4f2c" font-style="italic">Compact (CJ-C) · Standard (CJ-S) · Bass (CJ-B) · all dims in inches</text>
+
+  <!-- Compact (left) — 15h x 11w. Scale: 1 in = 16 px -->
+  <g transform="translate(140, 130)">
+    <text x="88" y="-15" text-anchor="middle" font-size="16" font-weight="bold" fill="#2b2417">COMPACT</text>
+    <text x="88" y="3" text-anchor="middle" font-size="10" fill="#6b4f2c" font-style="italic">15 H × 11 W × 11 D</text>
+    <!-- Tapa face (front) -->
+    <rect x="0" y="20" width="176" height="240" fill="url(#ply)" stroke="#6b4f2c" stroke-width="2"/>
+    <!-- Slap-zone unscrewed margin marker -->
+    <line x1="0" y1="84" x2="176" y2="84" stroke="#b95a3b" stroke-width="0.7" stroke-dasharray="3,2"/>
+    <text x="180" y="88" font-size="9" fill="#b95a3b" font-style="italic">slap zone (no screws above)</text>
+    <!-- Brass screw dots, every ~3" = 48px on perimeter -->
+    <g fill="#b8902f">
+      <circle cx="16"  cy="248" r="2.5"/><circle cx="64"  cy="248" r="2.5"/>
+      <circle cx="112" cy="248" r="2.5"/><circle cx="160" cy="248" r="2.5"/>
+      <circle cx="16"  cy="200" r="2.5"/><circle cx="160" cy="200" r="2.5"/>
+      <circle cx="16"  cy="152" r="2.5"/><circle cx="160" cy="152" r="2.5"/>
+      <circle cx="16"  cy="104" r="2.5"/><circle cx="160" cy="104" r="2.5"/>
+      <!-- top corners unscrewed (slap zone) -->
+    </g>
+    <!-- Dimensions -->
+    <line x1="200" y1="20"  x2="200" y2="260" stroke="#2b2417" stroke-width="0.6"/>
+    <line x1="196" y1="20"  x2="204" y2="20"  stroke="#2b2417" stroke-width="0.6"/>
+    <line x1="196" y1="260" x2="204" y2="260" stroke="#2b2417" stroke-width="0.6"/>
+    <text x="208" y="146" font-size="11" fill="#2b2417">15.000″</text>
+    <line x1="0"   y1="280" x2="176" y2="280" stroke="#2b2417" stroke-width="0.6"/>
+    <line x1="0"   y1="276" x2="0"   y2="284" stroke="#2b2417" stroke-width="0.6"/>
+    <line x1="176" y1="276" x2="176" y2="284" stroke="#2b2417" stroke-width="0.6"/>
+    <text x="88" y="296" text-anchor="middle" font-size="11" fill="#2b2417">11.000″</text>
+  </g>
+
+  <!-- Standard (centre) — 18h x 12w -->
+  <g transform="translate(490, 100)">
+    <text x="96" y="-15" text-anchor="middle" font-size="16" font-weight="bold" fill="#2b2417">STANDARD ⭐</text>
+    <text x="96" y="3" text-anchor="middle" font-size="10" fill="#6b4f2c" font-style="italic">18 H × 12 W × 12 D — first prototype</text>
+    <rect x="0" y="20" width="192" height="288" fill="url(#ply)" stroke="#6b4f2c" stroke-width="2"/>
+    <line x1="0" y1="100" x2="192" y2="100" stroke="#b95a3b" stroke-width="0.7" stroke-dasharray="3,2"/>
+    <text x="196" y="104" font-size="9" fill="#b95a3b" font-style="italic">slap zone (4–5″)</text>
+    <g fill="#b8902f">
+      <circle cx="16"  cy="296" r="2.5"/><circle cx="64"  cy="296" r="2.5"/>
+      <circle cx="112" cy="296" r="2.5"/><circle cx="160" cy="296" r="2.5"/>
+      <circle cx="16"  cy="248" r="2.5"/><circle cx="176" cy="248" r="2.5"/>
+      <circle cx="16"  cy="200" r="2.5"/><circle cx="176" cy="200" r="2.5"/>
+      <circle cx="16"  cy="152" r="2.5"/><circle cx="176" cy="152" r="2.5"/>
+      <circle cx="16"  cy="104" r="2.5"/><circle cx="176" cy="104" r="2.5"/>
+    </g>
+    <line x1="220" y1="20"  x2="220" y2="308" stroke="#2b2417" stroke-width="0.6"/>
+    <line x1="216" y1="20"  x2="224" y2="20"  stroke="#2b2417" stroke-width="0.6"/>
+    <line x1="216" y1="308" x2="224" y2="308" stroke="#2b2417" stroke-width="0.6"/>
+    <text x="228" y="170" font-size="11" fill="#2b2417">18.000″</text>
+    <line x1="0"   y1="328" x2="192" y2="328" stroke="#2b2417" stroke-width="0.6"/>
+    <line x1="0"   y1="324" x2="0"   y2="332" stroke="#2b2417" stroke-width="0.6"/>
+    <line x1="192" y1="324" x2="192" y2="332" stroke="#2b2417" stroke-width="0.6"/>
+    <text x="96" y="344" text-anchor="middle" font-size="11" fill="#2b2417">12.000″</text>
+  </g>
+
+  <!-- Bass (right) — 22h x 14w -->
+  <g transform="translate(820, 70)">
+    <text x="112" y="-15" text-anchor="middle" font-size="16" font-weight="bold" fill="#2b2417">BASS</text>
+    <text x="112" y="3" text-anchor="middle" font-size="10" fill="#6b4f2c" font-style="italic">22 H × 14 W × 14 D</text>
+    <rect x="0" y="20" width="224" height="352" fill="url(#ply)" stroke="#6b4f2c" stroke-width="2"/>
+    <line x1="0" y1="116" x2="224" y2="116" stroke="#b95a3b" stroke-width="0.7" stroke-dasharray="3,2"/>
+    <text x="228" y="120" font-size="9" fill="#b95a3b" font-style="italic">slap zone</text>
+    <g fill="#b8902f">
+      <circle cx="16"  cy="360" r="2.5"/><circle cx="64"  cy="360" r="2.5"/>
+      <circle cx="112" cy="360" r="2.5"/><circle cx="160" cy="360" r="2.5"/>
+      <circle cx="208" cy="360" r="2.5"/>
+      <circle cx="16"  cy="312" r="2.5"/><circle cx="208" cy="312" r="2.5"/>
+      <circle cx="16"  cy="264" r="2.5"/><circle cx="208" cy="264" r="2.5"/>
+      <circle cx="16"  cy="216" r="2.5"/><circle cx="208" cy="216" r="2.5"/>
+      <circle cx="16"  cy="168" r="2.5"/><circle cx="208" cy="168" r="2.5"/>
+      <circle cx="16"  cy="120" r="2.5"/><circle cx="208" cy="120" r="2.5"/>
+    </g>
+    <line x1="252" y1="20"  x2="252" y2="372" stroke="#2b2417" stroke-width="0.6"/>
+    <line x1="248" y1="20"  x2="256" y2="20"  stroke="#2b2417" stroke-width="0.6"/>
+    <line x1="248" y1="372" x2="256" y2="372" stroke="#2b2417" stroke-width="0.6"/>
+    <text x="260" y="200" font-size="11" fill="#2b2417">22.000″</text>
+    <line x1="0"   y1="392" x2="224" y2="392" stroke="#2b2417" stroke-width="0.6"/>
+    <line x1="0"   y1="388" x2="0"   y2="396" stroke="#2b2417" stroke-width="0.6"/>
+    <line x1="224" y1="388" x2="224" y2="396" stroke="#2b2417" stroke-width="0.6"/>
+    <text x="112" y="408" text-anchor="middle" font-size="11" fill="#2b2417">14.000″</text>
+  </g>
+
+  <!-- Legend -->
+  <g transform="translate(140, 540)">
+    <text x="0" y="0" font-size="13" font-weight="bold" fill="#2b2417">Tapa face (3 mm Baltic birch ply)</text>
+    <text x="0" y="20" font-size="11" fill="#5b3a1c">• Brass screws #6 × 3/4″ — every 3″ around perimeter</text>
+    <text x="0" y="38" font-size="11" fill="#5b3a1c">• Slap-zone (top 4–5″) intentionally unscrewed both upper corners</text>
+    <text x="0" y="56" font-size="11" fill="#5b3a1c">• Tapa replaceable — only screwed, not glued</text>
+  </g>
+
+  <!-- Predicted tunings table -->
+  <g transform="translate(580, 540)">
+    <text x="0" y="0" font-size="13" font-weight="bold" fill="#2b2417">Predicted bass voice (f_H, corrected)</text>
+    <text x="0" y="20" font-size="11" fill="#5b3a1c">• Compact:   f_H ≈ 107 Hz   (G♯2/A2)</text>
+    <text x="0" y="38" font-size="11" fill="#5b3a1c">• Standard:  f_H ≈ 96 Hz    (G2)</text>
+    <text x="0" y="56" font-size="11" fill="#5b3a1c">• Bass:      f_H ≈ 77 Hz    (D♯2/E2)</text>
+    <text x="0" y="78" font-size="10" fill="#6b4f2c" font-style="italic">All values from cajon-design-table.xlsx · pending first-prototype measurement</text>
+  </g>
+
+  <!-- Title block -->
+  <g transform="translate(800, 690)">
+    <rect x="0" y="0" width="360" height="100" fill="none" stroke="#2b2417" stroke-width="1"/>
+    <line x1="0" y1="34" x2="360" y2="34" stroke="#2b2417" stroke-width="0.6"/>
+    <line x1="0" y1="66" x2="360" y2="66" stroke="#2b2417" stroke-width="0.6"/>
+    <line x1="180" y1="34" x2="180" y2="100" stroke="#2b2417" stroke-width="0.6"/>
+    <text x="10" y="22" font-size="14" font-weight="bold" fill="#2b2417">Cajón Family — Front Elevation</text>
+    <text x="10" y="52" font-size="10" fill="#5b3a1c">Heifer Zephyr Instruments</text>
+    <text x="10" y="86" font-size="10" fill="#5b3a1c">Project: Cajón Family</text>
+    <text x="190" y="52" font-size="10" fill="#5b3a1c">Sheet 1 of 8</text>
+    <text x="190" y="86" font-size="10" fill="#5b3a1c">Rev. v1 — Tony Koop</text>
+  </g>
+</svg>

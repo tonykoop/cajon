@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" font-family="Inter, sans-serif">
+  <defs>
+    <pattern id="walnut3" patternUnits="userSpaceOnUse" width="6" height="6" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#5b3a1c" stroke-width="0.5" opacity="0.4"/>
+    </pattern>
+    <pattern id="maple3" patternUnits="userSpaceOnUse" width="5" height="5" patternTransform="rotate(-45)">
+      <line x1="0" y1="0" x2="0" y2="5" stroke="#a08050" stroke-width="0.4" opacity="0.4"/>
+    </pattern>
+  </defs>
+  <rect x="0" y="0" width="1000" height="700" fill="#fcf9f1"/>
+  <text x="500" y="42" text-anchor="middle" font-size="22" font-weight="bold" fill="#2b2417">FINGER JOINT — V1 CORNER (top view)</text>
+  <text x="500" y="64" text-anchor="middle" font-size="12" fill="#6b4f2c" font-style="italic">3/8″ pin spacing · parametric · two species shown for visual contrast</text>
+
+  <!-- Two panels meeting at corner. Show one side panel (vertical) and one top panel (horizontal). -->
+  <!-- Scale: 1 in = 60 px -->
+
+  <!-- Side panel — walnut, vertical, finger pockets on top edge -->
+  <g transform="translate(150, 200)">
+    <text x="240" y="-15" text-anchor="middle" font-size="14" font-weight="bold" fill="#2b2417">SIDE PANEL (walnut)</text>
+    <text x="240" y="2" text-anchor="middle" font-size="10" fill="#6b4f2c" font-style="italic">3/4″ thick · 12″ wide · top edge fingered</text>
+    <!-- Panel body -->
+    <rect x="0" y="45" width="480" height="180" fill="url(#walnut3)" stroke="#6b4f2c" stroke-width="1.5"/>
+    <!-- Finger pockets on top edge — 16 fingers in 12" → 0.75" per finger pair, but sketch as 8 fingers -->
+    <g fill="#fcf9f1" stroke="#6b4f2c" stroke-width="1.2">
+      <rect x="0"   y="0"  width="30" height="45"/>
+      <rect x="60"  y="0"  width="30" height="45"/>
+      <rect x="120" y="0"  width="30" height="45"/>
+      <rect x="180" y="0"  width="30" height="45"/>
+      <rect x="240" y="0"  width="30" height="45"/>
+      <rect x="300" y="0"  width="30" height="45"/>
+      <rect x="360" y="0"  width="30" height="45"/>
+      <rect x="420" y="0"  width="30" height="45"/>
+    </g>
+    <!-- Pin labels -->
+    <text x="15"  y="28" text-anchor="middle" font-size="9" fill="#6b4f2c">pin</text>
+    <text x="45"  y="28" text-anchor="middle" font-size="9" fill="#6b4f2c">tail</text>
+    <text x="240" y="-28" text-anchor="middle" font-size="10" fill="#5b3a1c">finger width = 0.375″ (parametric)</text>
+
+    <!-- Maple pin overlay (showing visual contrast option) -->
+    <g fill="url(#maple3)" stroke="#6b4f2c" stroke-width="0.6" opacity="0.85">
+      <rect x="30"  y="0" width="30" height="45"/>
+      <rect x="90"  y="0" width="30" height="45"/>
+      <rect x="150" y="0" width="30" height="45"/>
+      <rect x="210" y="0" width="30" height="45"/>
+      <rect x="270" y="0" width="30" height="45"/>
+      <rect x="330" y="0" width="30" height="45"/>
+      <rect x="390" y="0" width="30" height="45"/>
+      <rect x="450" y="0" width="30" height="45"/>
+    </g>
+
+    <!-- Dimensions -->
+    <line x1="0"   y1="250" x2="480" y2="250" stroke="#2b2417" stroke-width="0.6"/>
+    <line x1="0"   y1="246" x2="0"   y2="254" stroke="#2b2417" stroke-width="0.6"/>
+    <line x1="480" y1="246" x2="480" y2="254" stroke="#2b2417" stroke-width="0.6"/>
+    <text x="240" y="266" text-anchor="middle" font-size="11" fill="#2b2417">12.000″</text>
+
+    <line x1="500" y1="0" x2="500" y2="45" stroke="#2b2417" stroke-width="0.6"/>
+    <line x1="496" y1="0" x2="504" y2="0" stroke="#2b2417" stroke-width="0.6"/>
+    <line x1="496" y1="45" x2="504" y2="45" stroke="#2b2417" stroke-width="0.6"/>
+    <text x="510" y="26" font-size="10" fill="#2b2417">0.750″</text>
+    <text x="510" y="40" font-size="9" fill="#6b4f2c" font-style="italic">finger depth</text>
+
+    <line x1="30"  y1="60" x2="60"  y2="60" stroke="#2b2417" stroke-width="0.4"/>
+    <line x1="30"  y1="56" x2="30"  y2="64" stroke="#2b2417" stroke-width="0.4"/>
+    <line x1="60"  y1="56" x2="60"  y2="64" stroke="#2b2417" stroke-width="0.4"/>
+    <text x="45"  y="76" text-anchor="middle" font-size="9" fill="#2b2417">0.375″</text>
+  </g>
+
+  <!-- Notes -->
+  <g transform="translate(120, 510)">
+    <text x="0" y="0" font-size="13" font-weight="bold" fill="#2b2417">Cut method options</text>
+    <text x="0" y="22" font-size="11" fill="#5b3a1c">A. Table-saw finger jig — 1/2″ dado stack. Stable, tedious, repeatable.</text>
+    <text x="0" y="40" font-size="11" fill="#5b3a1c">B. CNC parametric — 1/2″ straight-flute spiral bit, 30 IPM, 18,000 RPM. Recommended.</text>
+    <text x="0" y="58" font-size="11" fill="#5b3a1c">C. Hand-cut — chisel + saw. Showpiece only; expect 4× build time.</text>
+    <text x="0" y="86" font-size="13" font-weight="bold" fill="#2b2417">Visual variations</text>
+    <text x="0" y="108" font-size="11" fill="#5b3a1c">• Same-species (all walnut) — subtle, joint visible only on close inspection.</text>
+    <text x="0" y="126" font-size="11" fill="#5b3a1c">• Contrasting (walnut sides, maple top + bottom) — joint is the visual feature. Recommended.</text>
+    <text x="0" y="144" font-size="11" fill="#5b3a1c">• 3-species (walnut + maple + cherry) — heirloom showpiece; alignment-critical.</text>
+  </g>
+
+  <!-- Title block -->
+  <g transform="translate(640, 600)">
+    <rect x="0" y="0" width="320" height="80" fill="none" stroke="#2b2417" stroke-width="1"/>
+    <line x1="0" y1="28" x2="320" y2="28" stroke="#2b2417" stroke-width="0.6"/>
+    <line x1="160" y1="28" x2="160" y2="80" stroke="#2b2417" stroke-width="0.6"/>
+    <text x="10" y="20" font-size="13" font-weight="bold" fill="#2b2417">V1 Finger Joint Detail</text>
+    <text x="10" y="46" font-size="10" fill="#5b3a1c">Heifer Zephyr · Cajón Family</text>
+    <text x="10" y="68" font-size="10" fill="#5b3a1c">Sheet 5 of 8 · Rev v1</text>
+    <text x="170" y="46" font-size="10" fill="#5b3a1c">Tony Koop</text>
+    <text x="170" y="68" font-size="10" fill="#5b3a1c">2026-05-07</text>
+  </g>
+</svg>

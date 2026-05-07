@@ -1,0 +1,26 @@
+member,variant,target,parameter,predicted_value,measured_value,unit,cents_error,measurement_date,instrument,notes
+Compact,V1,Helmholtz cavity fundamental,frequency,107,,Hz,,,Korg OT-120 + REW,"Predicted f_H using c=343 m/s, end correction = 1.7r; corresponds to G#2/A2 region"
+Compact,V1,plate (1,1) mode,frequency,107,,Hz,,,Korg OT-120 + REW,"Predicted; coupling to f_H is tight in Compact — coupled mode is the perceived bass"
+Compact,V1,coupled bass mode (perceived),frequency,107,,Hz,,,Korg OT-120 + REW,"Perceived 'thump' pitch; expect ±10 Hz from prediction"
+Standard,V1,Helmholtz cavity fundamental,frequency,96,,Hz,,,Korg OT-120 + REW,"Predicted f_H; corresponds to G2 region"
+Standard,V1,plate (1,1) mode,frequency,84,,Hz,,,Korg OT-120 + REW,"Predicted plate fundamental; Standard has ~2 semitone offset between plate and cavity"
+Standard,V1,coupled bass mode (perceived),frequency,90,,Hz,,,Korg OT-120 + REW,"Predicted; midpoint of plate and cavity if coupling is moderate"
+Standard,V2,Helmholtz cavity fundamental,frequency,96,,Hz,,,Korg OT-120 + REW,
+Standard,V3,Helmholtz cavity fundamental,frequency,96,,Hz,,,Korg OT-120 + REW,
+Standard,V4,Helmholtz cavity fundamental,frequency,96,,Hz,,,Korg OT-120 + REW,
+Bass,V1,Helmholtz cavity fundamental,frequency,77,,Hz,,,Korg OT-120 + REW,"Predicted f_H; corresponds to D#2/E2 region"
+Bass,V1,plate (1,1) mode,frequency,60,,Hz,,,Korg OT-120 + REW,"Plate is ~5 semitones below cavity → cavity dominates the bass voice"
+Bass,V1,coupled bass mode (perceived),frequency,77,,Hz,,,Korg OT-120 + REW,"Bass member is cavity-dominant; expect perceived pitch near f_H"
+Standard,V1,slap-vs-bass spectrum delta,1 kHz energy delta,5,,dB,,,REW,"Slap (corner strike) should be ≥ +5 dB at 1 kHz vs centre strike"
+Standard,V1,sustain T60 (bass voice),RT decay -60 dB,0.45,,seconds,,,REW,"Acceptance band 0.30-0.55 s; longer = boomy, shorter = dry"
+Standard,V1,snare buzz onset velocity,subjective,medium,,1-5,,,Korg OT-120,"Should engage at moderate (m) finger strikes; not at light (l)"
+All,All,tapa screw torque uniformity,4-corner inch-lb,3.0,,in-lb,,,torque screwdriver,"±0.5 in-lb across all screws — drives plate (1,1) consistency"
+All,All,bearing-edge / tapa fit,4-tap variation,0,,cents,,,Korg OT-120,"Tap each tapa quadrant; ±10 cents acceptance — non-uniform = uneven screw torque"
+All,All,internal cavity volume,measured (water displacement, dry-fit),1846.7,,cubic_inches,,,calipers,"Standard target; Compact 1307; Bass 3242"
+All,All,sound-hole diameter actual,measured,4.500,,inches,,,calipers,"±0.020 in; deburr both sides"
+All,All,tapa flatness, before mount,deflection at centre 0.5 lb load,0,,inches,,,dial indicator,"<0.030 in deflection at 0.5 lb point load — qualitative; reject if dimples visible"
+All,All,glue-block fit visual,visual inspection,pass,,pass/fail,,,visual,"All 8 corners; no gaps > 1/64 in"
+All,All,finger-joint gap visual (V1),visual inspection,0,,inches,,,feeler gauge,"<= 0.005 in acceptance"
+All,All,dovetail gap visual (V2),visual inspection,0,,inches,,,feeler gauge,"<= 0.005 in acceptance"
+All,All,spline glue-line visual (V4),visual inspection,0,,inches,,,feeler gauge,"<= 0.005 in acceptance"
+All,All,inlay flush,surface step measurement,0,,inches,,,straightedge + feeler,"Post-flush-sand; <= 0.002 in step at any point"

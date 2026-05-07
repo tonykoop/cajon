@@ -1,0 +1,30 @@
+part_id,supplier,supplier_url,sku_or_search,lead_time_days,moq,verified_price_date,price_volatility,notes
+BODY-WALNUT-SIDE-S,Bell Forest Products,bellforestproducts.com,"black walnut 4/4 S2S FAS",5,1 BdFt,2026-04-15,low,"FAS or better; figure grade optional for showpiece"
+BODY-WALNUT-TOP-S,Bell Forest Products,bellforestproducts.com,"black walnut 4/4 S2S FAS",5,1 BdFt,2026-04-15,low,
+BODY-WALNUT-BOTTOM-S,Bell Forest Products,bellforestproducts.com,"black walnut 4/4 S2S FAS",5,1 BdFt,2026-04-15,low,
+BODY-WALNUT-SIDE-C,Bell Forest Products,bellforestproducts.com,"black walnut 4/4 S2S FAS",5,1 BdFt,2026-04-15,low,
+BODY-WALNUT-SIDE-B,Bell Forest Products,bellforestproducts.com,"black walnut 4/4 S2S FAS",5,1 BdFt,2026-04-15,low,
+BACK-PLY-S,Ocooch Hardwoods,ocoochhardwoods.com,"Baltic birch 1/2 in BB grade 24x30",4,1,2026-04-15,low,"BB grade is the export-quality multi-ply; do NOT use big-box ply"
+BACK-PLY-C,Ocooch Hardwoods,ocoochhardwoods.com,"Baltic birch 1/2 in BB grade",4,1,2026-04-15,low,
+BACK-PLY-B,Ocooch Hardwoods,ocoochhardwoods.com,"Baltic birch 1/2 in BB grade",4,1,2026-04-15,low,
+TAPA-PLY-S,Ocooch Hardwoods,ocoochhardwoods.com,"Baltic birch 3 mm BB or BB/B",4,1,2026-04-15,medium,"3 mm = 0.118 in nominal; MUST be 3-ply or 5-ply marine; spot-check thickness on arrival"
+TAPA-PLY-C,Ocooch Hardwoods,ocoochhardwoods.com,"Baltic birch 3 mm BB",4,1,2026-04-15,medium,
+TAPA-PLY-B,Ocooch Hardwoods,ocoochhardwoods.com,"Baltic birch 3 mm BB",4,1,2026-04-15,medium,
+INLAY-MAPLE,Bell Forest Products,bellforestproducts.com,"hard maple 4/4 figured S2S",5,1 BdFt,2026-04-15,low,"Figured/curly maple optional"
+INLAY-YELLOWHEART,Cook Woods,cookwoods.com,"yellowheart 4/4 turning blanks",4,1,2026-04-15,medium,"Tropical wood; check CITES if shipping internationally"
+INLAY-CHERRY,Bell Forest Products,bellforestproducts.com,"cherry 4/4 S2S FAS",5,1 BdFt,2026-04-15,low,
+GLUE-BLOCK-WALNUT,(shop offcut),,—,0,0,2026-04-15,n/a,"Use stock offcuts from body panels; ~$1 incidental cost"
+JOINT-V4-SPLINE,Bell Forest Products,bellforestproducts.com,"hard maple 1/8 in stock",5,1,2026-04-15,low,"V4 only; rip in shop from maple stock"
+SNARE-GUITAR-STR,Sweetwater,sweetwater.com,"D'Addario EJ16 acoustic guitar strings",2,1,2026-04-15,low,"Use 3-4 of 6 strings; A/D/G/B work well"
+SNARE-TUNERS,Stewart-MacDonald,stewmac.com,"acoustic tuner machines 3+3",4,1,2026-04-15,low,"Or single-action snare tuner from a drum-shop"
+SNARE-MOUNT-BLOCK,(shop fabricated),,—,0,0,2026-04-15,n/a,"Cut from offcut maple"
+SNARE-WIRE-ALT,Sweetwater,sweetwater.com,"PureSound Custom Pro 14 in 20-strand",3,1,2026-04-15,low,"Cut to fit cajón internal width if used"
+HW-SCREW-BRASS,McFeely's,mcfeelys.com,"#6 x 3/4 in slotted brass flathead",3,100,2026-04-15,low,"Solid brass; not brass-plated"
+HW-FOOT-RUBBER,McMaster-Carr,mcmaster.com,"9540K822 self-adhesive rubber foot 1/2 in",2,1,2026-04-15,low,
+GLUE-TITEBOND3,Rockler,rockler.com,"Titebond III 16 oz",2,1,2026-04-15,low,
+FINISH-TUNG,Real Milk Paint Co,realmilkpaint.com,"100% pure tung oil 16 oz",4,1,2026-04-15,low,"Cut 50/50 with citrus solvent for first coat"
+FINISH-POLY,Rockler,rockler.com,"General Finishes Arm-R-Seal satin 1 qt",2,1,2026-04-15,low,
+ABRASIVE-SET,3M direct or local,—,"3M sandpaper 80/120/180/220 random-orbit",2,1,2026-04-15,low,
+CNC-BIT-TBN,Amana,amanatool.com,"45739 12.4 deg tapered ball-nose 1/4 in shank",3,1,2026-04-15,low,"Long-life carbide; the Broinwood-recommended geometry"
+CNC-BIT-FINGER,Amana,amanatool.com,"46176 1/2 in spiral bit 1/4 in shank",3,1,2026-04-15,low,
+CNC-BIT-DOVETAIL,Amana,amanatool.com,"45813 14 deg dovetail 1/2 in",3,1,2026-04-15,low,"V2 only"

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cajón Family — Heifer Zephyr Instruments</title>
+<style>
+  :root {
+    --paper: #fcf9f1;
+    --ink: #2b2417;
+    --warm: #6b4f2c;
+    --rule: #c8b89e;
+    --accent: #b95a3b;
+    --maple: #d6b27a;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--paper); color: var(--ink); font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", sans-serif; line-height: 1.55; }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 24px; }
+  header { padding: 56px 0 24px; border-bottom: 1px solid var(--rule); }
+  h1 { font-family: "Fraunces", Georgia, serif; font-weight: 700; font-size: 44px; line-height: 1.1; margin: 0 0 8px; }
+  .tagline { color: var(--warm); font-style: italic; margin: 0 0 8px; }
+  .breadcrumb { font-size: 13px; color: var(--warm); margin: 0; }
+  .breadcrumb a { color: var(--warm); }
+  h2 { font-family: "Fraunces", Georgia, serif; font-size: 28px; margin: 48px 0 12px; border-bottom: 1px solid var(--rule); padding-bottom: 6px; }
+  h3 { font-family: "Fraunces", Georgia, serif; font-size: 20px; margin: 28px 0 8px; }
+  p { margin: 0 0 14px; }
+  table { width: 100%; border-collapse: collapse; margin: 14px 0 24px; font-size: 14px; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  th { background: rgba(184, 144, 47, 0.08); font-family: "Fraunces", Georgia, serif; font-weight: 600; }
+  code { font-family: "JetBrains Mono", Menlo, monospace; font-size: 13px; background: rgba(0,0,0,0.04); padding: 1px 5px; border-radius: 3px; }
+  pre { background: rgba(0,0,0,0.05); padding: 14px 16px; border-radius: 4px; overflow-x: auto; font-family: "JetBrains Mono", Menlo, monospace; font-size: 13px; line-height: 1.5; }
+  .hero {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: linear-gradient(135deg, #5b3a1c 0%, #6b4f2c 50%, #8b6f3c 100%);
+    border-radius: 6px;
+    margin: 24px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fcf9f1;
+    font-family: "Fraunces", Georgia, serif;
+    font-size: 22px;
+    font-style: italic;
+    box-shadow: 0 4px 14px rgba(43, 36, 23, 0.25);
+  }
+  .badge { display: inline-block; padding: 2px 10px; background: var(--accent); color: var(--paper); border-radius: 3px; font-size: 12px; margin-left: 8px; vertical-align: middle; }
+  .filemap { font-size: 14px; }
+  .filemap li { margin: 4px 0; }
+  footer { margin: 80px 0 40px; padding-top: 16px; border-top: 1px solid var(--rule); font-size: 13px; color: var(--warm); }
+  footer a { color: var(--warm); }
+  .quote { border-left: 3px solid var(--accent); padding: 4px 16px; margin: 18px 0; font-style: italic; color: var(--warm); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <p class="breadcrumb"><a href="https://github.com/tonykoop/instrument-maker">tonykoop/instrument-maker</a> &nbsp;/&nbsp; <a href="https://github.com/tonykoop/cajon">cajon</a></p>
+  <h1>Cajón Family <span class="badge">Design v1</span></h1>
+  <p class="tagline">A parametric three-member box-drum family — Compact / Standard / Bass — with four manufacturing variants and an optional snare lineage.</p>
+</header>
+
+<div class="hero">[ family group hero — Compact · Standard · Bass · Heifer Zephyr ]</div>
+
+<h2>What this is</h2>
+
+<p>A complete parametric design packet for a three-member cajón family. Each member is the same governing physics scaled differently: a thin Baltic-birch tapa over a closed walnut box with a back-port sound hole, optionally fitted with a guitar-string snare or snare-drum wires.</p>
+
+<p>The packet ships acoustic physics, parametric geometry, BOM &middot; sourcing &middot; cut-list &middot; validation, dimensioned drawings, an assembly manual covering all four joinery variants, a red-team risks log, a Wolfram starter notebook, and this build-log site.</p>
+
+<table>
+  <thead><tr><th>Member</th><th>Outer dims (H × W × D)</th><th>Sound hole</th><th>Predicted f<sub>H</sub></th><th>Voice</th></tr></thead>
+  <tbody>
+    <tr><td>Compact (CJ-C)</td><td>15 × 11 × 11 in</td><td>4.0 in Ø</td><td>≈ 107 Hz</td><td>bright G♯2/A2</td></tr>
+    <tr><td><strong>Standard (CJ-S)</strong> ⭐</td><td>18 × 12 × 12 in</td><td>4.5 in Ø</td><td>≈ 96 Hz</td><td>balanced G2 — first prototype</td></tr>
+    <tr><td>Bass (CJ-B)</td><td>22 × 14 × 14 in</td><td>5.0 in Ø</td><td>≈ 77 Hz</td><td>deep D♯2/E2</td></tr>
+  </tbody>
+</table>
+
+<h2>The two co-dominant resonators</h2>
+
+<p>The cajón's bass voice is not a single mode — it is the coupling between two systems that sit within a few semitones of each other:</p>
+
+<ul>
+  <li><strong>Front-plate (1,1) clamped-rectangular bending mode.</strong> The 3 mm Baltic-birch tapa, clamped on all four edges by perimeter screws every 3″, vibrates in a single hump (centre highest) when struck in the centre. For Standard the predicted plate fundamental is ~84 Hz.</li>
+  <li><strong>Helmholtz cavity.</strong> The closed walnut box with a 4.5″ back-port hole acts as a Helmholtz resonator with f<sub>H</sub> ≈ 96 Hz on Standard.</li>
+</ul>
+
+<p>When struck dead-centre the player hears the <em>coupled</em> mode of plate + cavity — the deep "thump." When struck on the upper corner the slap zone (the unscrewed top 4–5″ of the tapa) bends and excites the high-mode plate spectrum + the snare wires; the player hears the bright "snap." Two zones, one body.</p>
+
+<h3>Helmholtz formula (corrected)</h3>
+
+<pre>f_H = (c / 2π) · √( A / (V · L_eff) )
+       L_eff = t_back + 1.7 · (d_hole / 2)</pre>
+
+<p>The original cajón workbook used <code>L_eff = t_back</code> — missing the 1.7·r end correction. That under-predicted L by ~5–10× and over-predicted f<sub>H</sub> by ~3×. Risk <strong>A2</strong> in <code>risks.md</code> tracks the correction.</p>
+
+<h2>Manufacturing variants</h2>
+
+<table>
+  <thead><tr><th>ID</th><th>Joint</th><th>Method</th><th>Strength</th><th>Visual</th><th>Notes</th></tr></thead>
+  <tbody>
+    <tr><td>V1 ⭐</td><td>Finger / box joint</td><td>table saw + jig OR CNC parametric</td><td>★★★</td><td>★★★</td><td>First-prototype default</td></tr>
+    <tr><td>V2</td><td>Half-blind dovetail</td><td>CNC</td><td>★★★</td><td>★★★</td><td>Showpiece path</td></tr>
+    <tr><td>V3</td><td>Rabbet</td><td>table saw or router</td><td>★★</td><td>★</td><td>Quickest commercial baseline</td></tr>
+    <tr><td>V4</td><td>Miter + spline</td><td>table saw + spline jig</td><td>★★★</td><td>★★★</td><td>Spline visual ties to inlay</td></tr>
+  </tbody>
+</table>
+
+<h3>Snare lineage (orthogonal to joinery)</h3>
+
+<table>
+  <thead><tr><th>Option</th><th>Snare</th><th>Voice</th></tr></thead>
+  <tbody>
+    <tr><td>A</td><td>None (Peruvian)</td><td>dry, woody, deep "thump"; tonal pitch reads cleanly</td></tr>
+    <tr><td>B ⭐</td><td>Guitar strings (adjustable)</td><td>bright, snappy slap; modern flamenco default</td></tr>
+    <tr><td>C</td><td>Snare-drum wires</td><td>thicker buzz, less articulate; studio</td></tr>
+  </tbody>
+</table>
+
+<h2>First prototype</h2>
+
+<div class="quote">Build the Standard (CJ-S) in V1 finger-joint with snare option B. Standard is the family's tonal centre; Compact and Bass scale geometrically once Standard's measured tuning lands.</div>
+
+<p>Estimated material cost: <strong>~$205</strong> (one Standard prototype, walnut + birch ply + brass + tung oil + Arm-R-Seal + abrasives + TBN bit + finger bit).<br>
+Estimated build time: <strong>~30 hours over 4 days</strong> with CNC for inlay + joinery.</p>
+
+<h2>What's parametric vs measured</h2>
+
+<table>
+  <thead><tr><th>Parametric (formula-driven, edit the workbook)</th><th>Measured (TBD on first prototype)</th></tr></thead>
+  <tbody>
+    <tr>
+      <td>
+        Helmholtz frequency f<sub>H</sub><br>
+        Plate (1,1) mode estimate<br>
+        Internal cavity volume<br>
+        Sound-hole area + L<sub>eff</sub><br>
+        Family table dimensions<br>
+        Joint / bit / feed parameters
+      </td>
+      <td>
+        Actual f<sub>H</sub> of the assembled cavity<br>
+        Actual plate (1,1) of the mounted tapa<br>
+        Slap-zone vs centre-strike spectrum delta<br>
+        Snare-buzz onset velocity (subjective)<br>
+        Sustain T60 of the bass voice
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>File map</h2>
+
+<ul class="filemap">
+  <li><code>design.md</code> — governing physics, family scaling law, critical dimensions, open assumptions</li>
+  <li><code>cajon-design-table.xlsx</code> — workbook source of truth for all formulas</li>
+  <li><code>bom.csv</code> — bill of materials, by variant</li>
+  <li><code>sourcing.csv</code> — suppliers, lead times, price-volatility flags</li>
+  <li><code>cut-list.csv</code> — operation-by-operation cut data</li>
+  <li><code>validation.csv</code> — predicted vs measured tuning + acceptance bands</li>
+  <li><code>assembly-manual.md</code> — phase-by-phase build procedure</li>
+  <li><code>supplier-rfq.md</code> — Q2 2026 batch sourcing summary</li>
+  <li><code>drawing-brief.md</code> — drawing list + conventions</li>
+  <li><code>visual-bom-brief.md</code> — Visual BOM photo brief</li>
+  <li><code>photo-shotlist.md</code> — in-shop process photo list</li>
+  <li><code>risks.md</code> — red-team failure-mode walk (17 risks, 5 categories)</li>
+  <li><code>wolfram-starter.wl</code> — Wolfram package: plate, Helmholtz, two-zone synthesis</li>
+  <li><code>drawings/</code> — dimensioned SVG drawings</li>
+  <li><code>cad/</code> — OpenSCAD parametric master</li>
+  <li><code>cnc/</code> — CNC strategy notes</li>
+  <li><code>scripts/</code> — generators for xlsx, pptx, pdf binaries</li>
+</ul>
+
+<h2>Status &amp; next steps</h2>
+
+<p>Design v1 is shipped. The first prototype is the Standard (CJ-S) with V1 finger-joint and snare option B. Tuning calibration is pending the first measurement — once recorded, the family scaling law will be re-checked against the data per the empirical-learning loop in the parent <a href="https://github.com/tonykoop/instrument-maker">instrument-maker</a> skill.</p>
+
+<p>Highest-priority open items:</p>
+
+<ol>
+  <li>Build the Standard prototype.</li>
+  <li>Measure f<sub>H</sub>, plate (1,1), and the slap-vs-centre spectral delta. Update <code>validation.csv</code>.</li>
+  <li>If predicted-vs-measured cents error exceeds ±50 cents, revisit the family scaling law.</li>
+  <li>Apply the corrected Helmholtz formula to <code>cajon-design-table.xlsx</code> formulas (currently corrected only in <code>design.md</code>).</li>
+  <li>Generate remaining drawings (sheets 02, 04, 06, 07, 08).</li>
+  <li>Capture build-log photography per <code>photo-shotlist.md</code>.</li>
+</ol>
+
+<footer>
+  <p>Heifer Zephyr Instruments &middot; Tony Koop &middot; <a href="https://github.com/tonykoop/cajon">tonykoop/cajon</a> &middot; 2026-05-07</p>
+  <p>Part of the <a href="https://github.com/tonykoop/instrument-maker">instrument-maker</a> catalogue. Licensed CC BY 4.0.</p>
+</footer>
+
+</div>
+</body>
+</html>
