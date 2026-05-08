@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1100" viewBox="0 0 900 1100">
+  <style>
+    .tapa{fill:#f3dfb2;stroke:#111;stroke-width:4}
+    .zone{fill:#fff2c7;stroke:#b44;stroke-width:3;stroke-dasharray:10 8}
+    .screw{fill:#b8892e;stroke:#111;stroke-width:2}
+    .dim{stroke:#111;stroke-width:2;marker-start:url(#arrow);marker-end:url(#arrow)}
+    .txt{font:22px Arial,sans-serif;fill:#111}
+    .small{font:16px Arial,sans-serif;fill:#111}
+    .title{font:20px Arial,sans-serif;font-weight:bold;fill:#111}
+  </style>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#111"/></marker></defs>
+  <rect x="20" y="20" width="860" height="1060" fill="#fff"/>
+  <text x="60" y="58" class="title">Sheet 04/08 - Tapa Screw Pattern and Slap-Zone Margin</text>
+  <text x="60" y="84" class="small">CJ-S Standard tapa: 18.000 x 12.000 x 0.118 in. #6 brass flathead screws.</text>
+  <rect x="250" y="150" width="360" height="720" rx="2" class="tapa"/>
+  <rect x="250" y="150" width="360" height="180" class="zone"/>
+  <text x="286" y="244" class="small">upper slap zone: leave both corners loose</text>
+  <text x="306" y="268" class="small">no screw in active 4-5 in corner area</text>
+
+  <g>
+    <circle cx="286" cy="360" r="10" class="screw"/><circle cx="430" cy="360" r="10" class="screw"/><circle cx="574" cy="360" r="10" class="screw"/>
+    <circle cx="286" cy="468" r="10" class="screw"/><circle cx="574" cy="468" r="10" class="screw"/>
+    <circle cx="286" cy="576" r="10" class="screw"/><circle cx="574" cy="576" r="10" class="screw"/>
+    <circle cx="286" cy="684" r="10" class="screw"/><circle cx="574" cy="684" r="10" class="screw"/>
+    <circle cx="286" cy="792" r="10" class="screw"/><circle cx="430" cy="792" r="10" class="screw"/><circle cx="574" cy="792" r="10" class="screw"/>
+    <circle cx="286" cy="846" r="10" class="screw"/><circle cx="430" cy="846" r="10" class="screw"/><circle cx="574" cy="846" r="10" class="screw"/>
+  </g>
+
+  <line x1="250" y1="910" x2="610" y2="910" class="dim"/>
+  <text x="382" y="950" class="small">12.000 in</text>
+  <line x1="650" y1="150" x2="650" y2="870" class="dim"/>
+  <text x="674" y="515" class="small">18.000 in</text>
+  <line x1="220" y1="150" x2="220" y2="330" class="dim"/>
+  <text x="96" y="247" class="small">4-5 in slap relief</text>
+  <text x="60" y="1000" class="small">Drive screws in diagonal pairs. Snug by hand; target uniformity about 3 in-lb if a torque screwdriver is available.</text>
+  <rect x="570" y="990" width="270" height="56" fill="none" stroke="#111"/>
+  <text x="584" y="1014" class="small">Heifer Zephyr Instruments</text>
+  <text x="584" y="1036" class="small">Cajon Family - Sheet 04</text>
+</svg>

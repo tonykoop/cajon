@@ -1,0 +1,4 @@
+member_id,member_name,outer_height_in,outer_width_in,outer_depth_in,body_thickness_in,back_thickness_in,tapa_thickness_mm,sound_hole_diameter_in,predicted_helmholtz_hz,predicted_plate_11_hz,prototype_priority,voice,notes
+CJ-C,Compact,15.000,11.000,11.000,0.625,0.500,3.0,4.000,107,107,2,bright A2/G#2,"Small player fit and bright portable voice; validate after CJ-S."
+CJ-S,Standard,18.000,12.000,12.000,0.750,0.500,3.0,4.500,96,84,1,balanced G2,"First public-review prototype; V1 finger joint and snare option B."
+CJ-B,Bass,22.000,14.000,14.000,0.750,0.500,3.0,5.000,77,60,3,deep E2/D#2,"Largest seating height and deepest cavity voice; two-person glue-up recommended."

@@ -1,0 +1,64 @@
+{
+  "project": "cajon",
+  "title": "Cajon Family Public-Review Prototype",
+  "mode": "root",
+  "status": "pre-build public-review packet",
+  "date": "2026-05-08",
+  "prototype": {
+    "member": "CJ-S",
+    "variant": "V1 finger joint",
+    "snare": "Option B guitar-string snare"
+  },
+  "slides": [
+    "Title",
+    "Project Intent",
+    "Family Overview",
+    "Governing Physics",
+    "Critical Geometry",
+    "Joinery Strategy",
+    "Tapa and Screw Pattern",
+    "Snare Mechanism",
+    "Jig Plan",
+    "BOM and Sourcing",
+    "Cut List and Manufacturing Flow",
+    "Drawings, CAD, CNC",
+    "Validation Plan",
+    "Risks",
+    "Public Release Readiness",
+    "Next Actions"
+  ],
+  "core_files": [
+    "design.md",
+    "family-spec.csv",
+    "bom.csv",
+    "sourcing.csv",
+    "cut-list.csv",
+    "validation.csv",
+    "assembly-manual.md",
+    "supplier-rfq.md",
+    "drawing-brief.md",
+    "visual-bom-brief.md",
+    "wolfram-starter.wl",
+    "risks.md",
+    "photo-shotlist.md",
+    "resources.md",
+    "jig-decision.md",
+    "validation-report.md",
+    "capstone-deck.md",
+    "print-packet.md",
+    "print-packet.html",
+    "site/index.html"
+  ],
+  "directories": [
+    "drawings",
+    "cad",
+    "cnc",
+    "jigs"
+  ],
+  "public_release_concerns": [
+    "Replace placeholder visuals with real CJ-S build photos.",
+    "Verify current supplier pricing and availability before recommending purchases.",
+    "Confirm workbook Helmholtz cells use the corrected end correction.",
+    "Mark all acoustic values as predicted until validation.csv contains measured rows."
+  ]
+}

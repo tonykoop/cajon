@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="650" viewBox="0 0 1000 650">
+  <style>
+    .body{fill:#d2a66b;stroke:#111;stroke-width:3}
+    .tapa{fill:#f3dfb2;stroke:#111;stroke-width:3}
+    .block{fill:#c79056;stroke:#111;stroke-width:3}
+    .string{stroke:#444;stroke-width:3}
+    .dim{stroke:#111;stroke-width:2;marker-start:url(#arrow);marker-end:url(#arrow)}
+    .small{font:16px Arial,sans-serif;fill:#111}
+    .title{font:20px Arial,sans-serif;font-weight:bold;fill:#111}
+  </style>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#111"/></marker></defs>
+  <rect x="20" y="20" width="960" height="610" fill="#fff"/>
+  <text x="50" y="58" class="title">Sheet 07/08 - Snare Option B Guitar-String Mount Detail</text>
+  <text x="50" y="84" class="small">Section view looking from side: adjustable strings contact the inside of the tapa near the top slap zone.</text>
+  <rect x="240" y="140" width="510" height="350" class="body"/>
+  <rect x="190" y="140" width="28" height="350" class="tapa"/>
+  <rect x="750" y="140" width="32" height="350" class="body"/>
+  <polygon class="block" points="575,180 655,202 655,290 575,270"/>
+  <line x1="650" y1="214" x2="218" y2="230" class="string"/>
+  <line x1="650" y1="238" x2="218" y2="248" class="string"/>
+  <line x1="650" y1="262" x2="218" y2="266" class="string"/>
+  <circle cx="822" cy="220" r="16" fill="#bbb" stroke="#111" stroke-width="2"/>
+  <circle cx="822" cy="252" r="16" fill="#bbb" stroke="#111" stroke-width="2"/>
+  <circle cx="822" cy="284" r="16" fill="#bbb" stroke="#111" stroke-width="2"/>
+  <text x="790" y="330" class="small">external tuner pegs</text>
+  <line x1="570" y1="180" x2="570" y2="270" class="dim"/>
+  <text x="478" y="230" class="small">8-12 deg angled face</text>
+  <line x1="218" y1="140" x2="218" y2="230" class="dim"/>
+  <text x="48" y="194" class="small">contact about 1 in below top</text>
+  <text x="50" y="548" class="small">Tune contact pressure by ear: no buzz on light tap; clean buzz on medium corner slap; no center-strike rattle.</text>
+  <rect x="670" y="530" width="270" height="56" fill="none" stroke="#111"/>
+  <text x="684" y="554" class="small">Heifer Zephyr Instruments</text>
+  <text x="684" y="576" class="small">Cajon Family - Sheet 07</text>
+</svg>

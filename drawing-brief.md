@@ -26,4 +26,4 @@ The `drawings/` folder ships dimensioned SVGs for the family. Each SVG follows H
 
 ## File status
 
-The first three drawings (`01`, `03`, `04`) ship in v1. The remaining drawings are stubs for v2 — the geometry is fully specified in `design.md` and `cut-list.csv`, so a CAD operator can produce them from the data; the SVGs are the human-readable diff target.
+All eight public-review SVG sheets ship in this root packet. Sheets 02, 06, 07, and 08 are intentionally simplified technical briefs rather than full CAD exports; they identify datums, critical features, fixture logic, and acceptance checks so a CAD operator can redraw them without guessing design intent.

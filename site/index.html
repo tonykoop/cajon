@@ -155,12 +155,16 @@ Estimated build time: <strong>~30 hours over 4 days</strong> with CNC for inlay 
 
 <ul class="filemap">
   <li><code>design.md</code> — governing physics, family scaling law, critical dimensions, open assumptions</li>
+  <li><code>family-spec.csv</code> — three-member sizing law</li>
   <li><code>cajon-design-table.xlsx</code> — workbook source of truth for all formulas</li>
   <li><code>bom.csv</code> — bill of materials, by variant</li>
   <li><code>sourcing.csv</code> — suppliers, lead times, price-volatility flags</li>
   <li><code>cut-list.csv</code> — operation-by-operation cut data</li>
   <li><code>validation.csv</code> — predicted vs measured tuning + acceptance bands</li>
+  <li><code>validation-report.md</code> — current pre-build validation status</li>
   <li><code>assembly-manual.md</code> — phase-by-phase build procedure</li>
+  <li><code>jig-decision.md</code> — fixture choices for square glue-up and repeatable drilling</li>
+  <li><code>resources.md</code> — provenance, assumptions, supplier verification notes</li>
   <li><code>supplier-rfq.md</code> — Q2 2026 batch sourcing summary</li>
   <li><code>drawing-brief.md</code> — drawing list + conventions</li>
   <li><code>visual-bom-brief.md</code> — Visual BOM photo brief</li>
@@ -170,6 +174,7 @@ Estimated build time: <strong>~30 hours over 4 days</strong> with CNC for inlay 
   <li><code>drawings/</code> — dimensioned SVG drawings</li>
   <li><code>cad/</code> — OpenSCAD parametric master</li>
   <li><code>cnc/</code> — CNC strategy notes</li>
+  <li><code>jigs/</code> — square assembly and drill-template drawings</li>
   <li><code>scripts/</code> — generators for xlsx, pptx, pdf binaries</li>
 </ul>
 
@@ -184,7 +189,7 @@ Estimated build time: <strong>~30 hours over 4 days</strong> with CNC for inlay 
   <li>Measure f<sub>H</sub>, plate (1,1), and the slap-vs-centre spectral delta. Update <code>validation.csv</code>.</li>
   <li>If predicted-vs-measured cents error exceeds ±50 cents, revisit the family scaling law.</li>
   <li>Apply the corrected Helmholtz formula to <code>cajon-design-table.xlsx</code> formulas (currently corrected only in <code>design.md</code>).</li>
-  <li>Generate remaining drawings (sheets 02, 04, 06, 07, 08).</li>
+  <li>Replace simplified SVG sheets with CAD-exported dimensions after build review.</li>
   <li>Capture build-log photography per <code>photo-shotlist.md</code>.</li>
 </ol>
 

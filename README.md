@@ -68,21 +68,30 @@ For the full derivation, family scaling law, and assumptions, see [`design.md`](
 | File / folder | Purpose |
 |---------------|---------|
 | [`design.md`](design.md) | Governing physics, family scaling, critical dims, open assumptions |
+| [`family-spec.csv`](family-spec.csv) | Three-member sizing law for Compact / Standard / Bass |
 | [`cajon-design-table.xlsx`](cajon-design-table.xlsx) | Artisan-style reference workbook (in repo) |
 | [`bom.csv`](bom.csv) | Bill of materials, by variant |
 | [`sourcing.csv`](sourcing.csv) | Suppliers, lead times, price-volatility flags |
 | [`cut-list.csv`](cut-list.csv) | Operation-by-operation cut data |
 | [`validation.csv`](validation.csv) | Predicted vs measured tuning + acceptance bands |
+| [`validation-report.md`](validation-report.md) | Pre-build validation status, gates, and release checklist |
 | [`assembly-manual.md`](assembly-manual.md) | Phase-by-phase build (10 phases × 4 variants × 3 snare options) |
 | [`supplier-rfq.md`](supplier-rfq.md) | Q2 2026 batch sourcing summary for prospective suppliers |
 | [`drawing-brief.md`](drawing-brief.md) | List of required drawings + conventions |
 | [`visual-bom-brief.md`](visual-bom-brief.md) | Visual-BOM photo brief |
 | [`photo-shotlist.md`](photo-shotlist.md) | In-shop process photo list |
+| [`resources.md`](resources.md) | Provenance, assumptions, and supplier verification notes |
+| [`jig-decision.md`](jig-decision.md) | Fixture choices for square assembly, drilling, and repeatability |
 | [`risks.md`](risks.md) | Red-team failure-mode walk (17 risks, 5 categories) |
 | [`wolfram-starter.wl`](wolfram-starter.wl) | Wolfram package: plate, Helmholtz, two-zone synthesis |
-| [`drawings/`](drawings/) | Dimensioned SVG drawings (sheets 1, 3, 5 in v1) |
+| [`capstone-deck.md`](capstone-deck.md) | Markdown capstone companion for validator and review |
+| [`capstone-manifest.json`](capstone-manifest.json) | Capstone file map and public-release concerns |
+| [`print-packet.md`](print-packet.md) | Printable shop packet in Markdown |
+| [`print-packet.html`](print-packet.html) | Browser-printable shop packet |
+| [`drawings/`](drawings/) | Dimensioned SVG drawings (sheets 1–8) |
 | [`cad/`](cad/) | OpenSCAD parametric master (`cajon-master.scad`) |
 | [`cnc/`](cnc/) | CNC bit + feed strategies for finger-joint, inlay, sound hole |
+| [`jigs/`](jigs/) | Fixture drawings for square assembly and tapa screw layout |
 | [`site/index.html`](site/index.html) | Public build-log site |
 | [`scripts/`](scripts/) | Generators for xlsx, pptx, pdf binaries |
 | [`BUILD.md`](BUILD.md) | How to regenerate the binary deliverables |
@@ -93,6 +102,7 @@ Generated binaries (run `python scripts/build_all.py`):
 - `Cajon-Family-Design.xlsx` — parametric workbook ingesting the CSVs
 - `Cajon-Family-Capstone.pptx` — capstone slide deck
 - `Cajon-Family-Print-Packet.pdf` — printable shop packet
+- `capstone-deck.pptx` and `print-packet.pdf` — validator-compatible root-mode aliases
 
 ---
 
@@ -114,7 +124,7 @@ Generated binaries (run `python scripts/build_all.py`):
 - **Design v1 — shipped.** Governing physics, family scaling, BOM/sourcing/cut-list/validation, drawings (sheets 1, 3, 5), CAD master, CNC notes, risks, wolfram starter, build-log site, build scripts.
 - **First prototype build — pending.** Standard (CJ-S), V1 finger-joint, snare option B.
 - **Tuning calibration — pending first measurement.** Once recorded, the family scaling law gets cross-checked against the data per the empirical-learning loop in the parent `instrument-maker` skill.
-- **Drawings v2 — queued.** Sheets 02 (isometric), 04 (tapa screw pattern), 06 (dovetail), 07 (snare mount), 08 (CNC inlay zone).
+- **Drawings v2 — queued.** Current sheets 01–08 are public-review SVGs; next pass should replace simplified sheets with CAD-exported dimension drawings after the first build review.
 - **Workbook formula revision — queued.** Replace `L = t_back` with `L_eff = t_back + 1.7·r` in `cajon-design-table.xlsx`.
 
 ---

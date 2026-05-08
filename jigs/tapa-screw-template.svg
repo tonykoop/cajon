@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="1020" viewBox="0 0 720 1020">
+  <style>
+    .template{fill:#eef7ff;stroke:#111;stroke-width:3}
+    .no{fill:#ffe3df;stroke:#b44;stroke-width:2;stroke-dasharray:8 6}
+    .hole{fill:#fff;stroke:#111;stroke-width:2}
+    .txt{font:16px Arial,sans-serif;fill:#111}
+  </style>
+  <rect width="720" height="1020" fill="#fff"/>
+  <text x="42" y="42" class="txt">CJ-S tapa screw drilling template - print/check scale before use</text>
+  <rect x="180" y="90" width="360" height="720" class="template"/>
+  <rect x="180" y="90" width="360" height="180" class="no"/>
+  <text x="230" y="182" class="txt">NO-SCREW SLAP ZONE</text>
+  <g>
+    <circle cx="216" cy="300" r="7" class="hole"/><circle cx="360" cy="300" r="7" class="hole"/><circle cx="504" cy="300" r="7" class="hole"/>
+    <circle cx="216" cy="408" r="7" class="hole"/><circle cx="504" cy="408" r="7" class="hole"/>
+    <circle cx="216" cy="516" r="7" class="hole"/><circle cx="504" cy="516" r="7" class="hole"/>
+    <circle cx="216" cy="624" r="7" class="hole"/><circle cx="504" cy="624" r="7" class="hole"/>
+    <circle cx="216" cy="732" r="7" class="hole"/><circle cx="360" cy="732" r="7" class="hole"/><circle cx="504" cy="732" r="7" class="hole"/>
+    <circle cx="216" cy="786" r="7" class="hole"/><circle cx="360" cy="786" r="7" class="hole"/><circle cx="504" cy="786" r="7" class="hole"/>
+  </g>
+  <line x1="360" y1="90" x2="360" y2="810" stroke="#227" stroke-width="1" stroke-dasharray="7 5"/>
+  <text x="285" y="850" class="txt">Index from bottom edge and centerline.</text>
+  <text x="205" y="875" class="txt">Pilot to match #6 brass flathead screws.</text>
+</svg>

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="760" viewBox="0 0 1100 760">
+  <style>
+    .panel{fill:#d2a66b;stroke:#24180d;stroke-width:3}
+    .ply{fill:#ead7aa;stroke:#24180d;stroke-width:3}
+    .tapa{fill:#f3dfb2;stroke:#24180d;stroke-width:3}
+    .dim{stroke:#111;stroke-width:2;marker-start:url(#arrow);marker-end:url(#arrow)}
+    .lead{stroke:#111;stroke-width:2;fill:none}
+    .txt{font:22px Arial,sans-serif;fill:#111}
+    .small{font:16px Arial,sans-serif;fill:#111}
+    .title{font:20px Arial,sans-serif;font-weight:bold;fill:#111}
+  </style>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#111"/>
+    </marker>
+  </defs>
+  <rect x="20" y="20" width="1060" height="720" fill="#fff"/>
+  <text x="50" y="58" class="title">Sheet 02/08 - Standard CJ-S Exploded Isometric</text>
+  <text x="50" y="86" class="small">Units: inches. Datum A: bottom outside face. Datum B: back outside face. Revision: public-review root packet.</text>
+
+  <polygon class="panel" points="355,178 535,118 535,458 355,518"/>
+  <polygon class="panel" points="535,118 735,218 735,558 535,458"/>
+  <polygon class="panel" points="355,178 535,118 735,218 555,278"/>
+  <polygon class="panel" points="355,518 535,458 735,558 555,618"/>
+  <polygon class="ply" points="765,230 875,286 875,626 765,570"/>
+  <circle cx="820" cy="398" r="64" fill="#fff" stroke="#24180d" stroke-width="3"/>
+  <polygon class="tapa" points="155,230 315,180 315,520 155,570"/>
+
+  <line x1="155" y1="610" x2="315" y2="560" class="dim"/>
+  <text x="204" y="642" class="small">12.000 W</text>
+  <line x1="125" y1="230" x2="125" y2="570" class="dim"/>
+  <text x="50" y="405" class="small">18.000 H</text>
+  <line x1="560" y1="638" x2="740" y2="578" class="dim"/>
+  <text x="610" y="678" class="small">12.000 D</text>
+
+  <line x1="318" y1="255" x2="382" y2="248" class="lead"/>
+  <text x="48" y="210" class="small">3 mm Baltic birch tapa, screwed not glued</text>
+  <line x1="705" y1="220" x2="842" y2="278" class="lead"/>
+  <text x="755" y="170" class="small">1/2 in back panel with 4.5 in sound hole</text>
+  <line x1="510" y1="118" x2="510" y2="82" class="lead"/>
+  <text x="420" y="110" class="small">3/4 in walnut shell panels</text>
+
+  <rect x="745" y="72" width="285" height="92" fill="none" stroke="#111" stroke-width="2"/>
+  <text x="760" y="100" class="small">Exploded callouts</text>
+  <text x="760" y="126" class="small">1 tapa, 2 sides, top, bottom, back</text>
+  <text x="760" y="150" class="small">8 internal triangular glue blocks</text>
+  <rect x="765" y="650" width="285" height="56" fill="none" stroke="#111"/>
+  <text x="778" y="674" class="small">Heifer Zephyr Instruments</text>
+  <text x="778" y="696" class="small">Cajon Family - Sheet 02</text>
+</svg>
