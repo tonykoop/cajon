@@ -127,6 +127,17 @@ Generated binaries (run `python scripts/build_all.py`):
 - **Drawings v2 — queued.** Current sheets 01–08 are public-review SVGs; next pass should replace simplified sheets with CAD-exported dimension drawings after the first build review.
 - **Workbook formula revision — queued.** Replace `L = t_back` with `L_eff = t_back + 1.7·r` in `cajon-design-table.xlsx`.
 
+## Round 3 L2 Review Evidence
+
+- `git diff --check` is expected to pass for the Round 3 packet branch.
+- `python3 /home/tony/.codex/skills/instrument-maker-v4/scripts/validate_packet.py . --mode root`
+  is the root-mode gate before merge review.
+- This packet is L2: design, sourcing, cut list, drawings, CNC notes, risks,
+  validation plan, print packet, and capstone artifacts are present for human
+  review.
+- Empirical/build gates remain deferred until the Standard CJ-S prototype is
+  assembled, measured, and logged in `validation.csv`.
+
 ---
 
 ## License
