@@ -2,12 +2,23 @@
   "project": "cajon",
   "title": "Cajon Family Public-Review Prototype",
   "mode": "root",
-  "status": "pre-build public-review packet",
-  "date": "2026-05-08",
+  "status": "pre-build V5 build-packet candidate",
+  "date": "2026-05-18",
+  "issue": "https://github.com/tonykoop/cajon/issues/1",
   "prototype": {
     "member": "CJ-S",
     "variant": "V1 finger joint",
     "snare": "Option B guitar-string snare"
+  },
+  "authority": {
+    "fabrication_authority": "design table, OpenSCAD source, jig templates, and reviewed drawing set; measurement-gated before production release",
+    "visual_register": "visual-output-register.csv",
+    "non_authoritative_assets": [
+      "site previews",
+      "visual BOM layouts",
+      "future concept renders",
+      "placeholder images"
+    ]
   },
   "slides": [
     "Title",
@@ -44,21 +55,26 @@
     "resources.md",
     "jig-decision.md",
     "validation-report.md",
+    "visual-output-register.csv",
     "capstone-deck.md",
     "print-packet.md",
     "print-packet.html",
+    "explorer.html",
     "site/index.html"
   ],
   "directories": [
     "drawings",
     "cad",
     "cnc",
-    "jigs"
+    "jigs",
+    "images",
+    "data"
   ],
   "public_release_concerns": [
     "Replace placeholder visuals with real CJ-S build photos.",
     "Verify current supplier pricing and availability before recommending purchases.",
     "Confirm workbook Helmholtz cells use the corrected end correction.",
-    "Mark all acoustic values as predicted until validation.csv contains measured rows."
+    "Mark all acoustic values as predicted until validation.csv contains measured rows.",
+    "Validate snare preload, panel thickness after milling, joinery fit, and strike-response measurements before production-ready claims."
   ]
 }

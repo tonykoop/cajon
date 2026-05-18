@@ -382,7 +382,7 @@ mark.hit{background:var(--gold);color:var(--ink);
 
   <div class="status-row">
     <div class="status-label">Status</div>
-    <div class="status-val"><span class="pill pill-gate">Pre-build public review</span>&nbsp;&nbsp;<span class="muted">Acoustic values are predicted until CJ-S measurements land.</span></div>
+    <div class="status-val"><span class="pill pill-gate">Pre-build V5 candidate</span>&nbsp;&nbsp;<span class="muted">Acoustic, snare, joinery, and strike-response values are predicted until CJ-S measurements land.</span></div>
   </div>
   <div class="status-row">
     <div class="status-label">Family</div>
@@ -390,14 +390,16 @@ mark.hit{background:var(--gold);color:var(--ink);
   </div>
   <div class="status-row">
     <div class="status-label">Release gates</div>
-    <div class="status-val"><ul class="gates"><li class="gate"><span class="gate-dot"></span><span class="gate-label">Replace placeholder visuals with real CJ-S build photos.</span></li><li class="gate"><span class="gate-dot"></span><span class="gate-label">Verify current supplier pricing and availability before recommending purchases.</span></li><li class="gate"><span class="gate-dot"></span><span class="gate-label">Confirm workbook Helmholtz cells use the corrected end correction.</span></li><li class="gate"><span class="gate-dot"></span><span class="gate-label">Keep acoustic values marked predicted until <code>validation.csv</code> contains measured rows.</span></li></ul></div>
+    <div class="status-val"><ul class="gates"><li class="gate"><span class="gate-dot"></span><span class="gate-label">Replace placeholder visuals with real CJ-S build photos.</span></li><li class="gate"><span class="gate-dot"></span><span class="gate-label">Verify current supplier pricing and availability before recommending purchases.</span></li><li class="gate"><span class="gate-dot"></span><span class="gate-label">Confirm workbook Helmholtz cells use the corrected end correction.</span></li><li class="gate"><span class="gate-dot"></span><span class="gate-label">Keep acoustic values marked predicted until <code>validation.csv</code> contains measured rows.</span></li><li class="gate"><span class="gate-dot"></span><span class="gate-label">Treat site previews, visual BOM layouts, and future generated images as non-authoritative unless <code>visual-output-register.csv</code> traces them to design-table/CAD authority.</span></li></ul></div>
   </div>
 </article>
 
 <section id="overview" data-toc="Overview" data-toc-group="Project">
   <h1><span class="eyebrow">01 · Overview</span>Cajon Family Public-Review Prototype</h1>
 
-  <p>This explorer is the studio-facing build packet for <strong>cajon</strong>. Sections below cover design, BOM, validation, the interactive acoustic model, risks, capstone deliverables, and release gates for the box-percussion / Helmholtz packet.</p>
+  <p>This explorer is the studio-facing build packet for <strong>cajon</strong>. Sections below cover design, BOM, validation, the interactive acoustic model, visual authority, risks, capstone deliverables, and release gates for the box-percussion / Helmholtz packet.</p>
+
+  <div class="callout warn"><span class="lab">Authority boundary</span><p>This is a pre-build V5 packet candidate. Panel thickness, joinery strength, snare preload, and strike response must be measured on the CJ-S prototype before production-ready claims.</p></div>
 
 
 </section>
@@ -408,6 +410,7 @@ mark.hit{background:var(--gold);color:var(--ink);
 <div class="file"><div class="file-head" onclick="toggleFile(this)"><span class="icon">▶</span><span class="file-name">bom.csv</span><span class="file-type">CSV</span><span class="file-desc">Dimension or registry table</span><span class="file-actions"><a href="bom.csv" target="_blank" rel="noopener">Open</a></span></div><div class="file-body" data-csv="bom.csv"></div></div>
 <div class="file"><div class="file-head" onclick="toggleFile(this)"><span class="icon">▶</span><span class="file-name">cut-list.csv</span><span class="file-type">CSV</span><span class="file-desc">Dimension or registry table</span><span class="file-actions"><a href="cut-list.csv" target="_blank" rel="noopener">Open</a></span></div><div class="file-body" data-csv="cut-list.csv"></div></div>
 <div class="file"><div class="file-head" onclick="toggleFile(this)"><span class="icon">▶</span><span class="file-name">family-spec.csv</span><span class="file-type">CSV</span><span class="file-desc">Dimension or registry table</span><span class="file-actions"><a href="family-spec.csv" target="_blank" rel="noopener">Open</a></span></div><div class="file-body" data-csv="family-spec.csv"></div></div>
+<div class="file"><div class="file-head" onclick="toggleFile(this)"><span class="icon">▶</span><span class="file-name">visual-output-register.csv</span><span class="file-type">CSV</span><span class="file-desc">Visual/CAD authority chain</span><span class="file-actions"><a href="visual-output-register.csv" target="_blank" rel="noopener">Open</a></span></div><div class="file-body" data-csv="visual-output-register.csv"></div></div>
 <div class="file"><div class="file-head" onclick="toggleFile(this)"><span class="icon">▶</span><span class="file-name">sourcing.csv</span><span class="file-type">CSV</span><span class="file-desc">Dimension or registry table</span><span class="file-actions"><a href="sourcing.csv" target="_blank" rel="noopener">Open</a></span></div><div class="file-body" data-csv="sourcing.csv"></div></div>
 <div class="cards"><div class="card"><div class="k">Workbook</div><div class="v">Cajon-Family-Design.xlsx<span class="sub">Cajon-Family-Design.xlsx</span></div><p style="margin-top:8px"><a href="Cajon-Family-Design.xlsx" target="_blank" rel="noopener">Open</a></p></div><div class="card"><div class="k">Workbook</div><div class="v">cajon-design-table.xlsx<span class="sub">cajon-design-table.xlsx</span></div><p style="margin-top:8px"><a href="cajon-design-table.xlsx" target="_blank" rel="noopener">Open</a></p></div></div>
 </section>

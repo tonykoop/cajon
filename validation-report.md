@@ -6,6 +6,11 @@
 
 The packet is ready for a human shop review before the first physical build. All acoustic values are predictions from the design table and first-order models. No row in `validation.csv` should be read as measured performance until the `measured_value` and `measurement_date` columns are populated.
 
+The current status is a pre-build V5 build-packet candidate, not a measured or
+build-ready release. `visual-output-register.csv` records which artifacts can
+support fabrication planning and which remain derived previews or concept
+support.
+
 ## Prototype under test
 
 | Field | Value |
@@ -31,6 +36,7 @@ The packet is ready for a human shop review before the first physical build. All
 | Slap separation | +5 dB at 1 kHz | Corner strike at least +5 dB vs center strike | Pending build |
 | Snare onset | Medium strike | No buzz on light tap, clean buzz on medium slap | Pending build |
 | Finish feel | Smooth body, natural tapa | No sticky finish, no film bridging slap zone | Pending build |
+| Visual authority | Register present | `validate_visual_authority.py` exits 0 | Pass, 16 rows checked |
 
 ## Test sequence
 
@@ -53,3 +59,20 @@ The design has no measured blocker yet. The highest-risk unknowns are tapa mater
 - Confirm the square assembly jig can clamp the exact outside dimensions without denting finished faces.
 - Confirm tuner hardware does not interfere with the player or with the sound-hole airflow.
 - Confirm public photos show the real prototype, not placeholder imagery.
+
+## Round 31 V5 Issue Validation
+
+Run before PR:
+
+```bash
+jq . capstone-manifest.json
+test -f explorer.html
+git diff --check
+python3 /home/tony/.codex/skills/instrument-maker/scripts/validate_visual_authority.py visual-output-register.csv
+```
+
+Observed result: clean. `validate_visual_authority.py` checked 16 rows with no
+errors or warnings. `validate_acoustic_law.py family-spec.csv` was also run and
+correctly skipped the 3 non-wind rows with no errors or warnings because this
+cajon packet is a box-drum / plate-and-Helmholtz system, not a wind or reed
+family-spec packet.
