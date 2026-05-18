@@ -31,6 +31,19 @@ A complete parametric design packet for a coordinated three-member cajón family
 
 The packet ships acoustic physics, parametric geometry, BOM &middot; sourcing &middot; cut-list &middot; validation, dimensioned drawings, an assembly manual covering all four variants, a red-team risks log, a Wolfram starter notebook, a capstone slide deck, a printable shop packet, and a public build-log site.
 
+## Current authority status
+
+Current status: **pre-build V5 build-packet candidate**. The packet has a
+design table, OpenSCAD master, SVG review drawings, CNC/jig notes, print packet,
+capstone deck, and explorer, but it is not a measured or production-ready
+release yet.
+
+Fabrication authority is limited to the named design table, OpenSCAD source,
+fixture templates, and reviewed drawing set listed in
+`visual-output-register.csv`. Snare response, panel-thickness behavior, joinery
+strength, and strike-response claims remain predictions until the Standard
+`CJ-S` prototype is built and `validation.csv` contains measured rows.
+
 ---
 
 ## Governing physics
@@ -83,6 +96,7 @@ For the full derivation, family scaling law, and assumptions, see [`design.md`](
 | [`resources.md`](resources.md) | Provenance, assumptions, and supplier verification notes |
 | [`jig-decision.md`](jig-decision.md) | Fixture choices for square assembly, drilling, and repeatability |
 | [`risks.md`](risks.md) | Red-team failure-mode walk (17 risks, 5 categories) |
+| [`visual-output-register.csv`](visual-output-register.csv) | Visual/CAD authority chain for drawings, templates, generated previews, and image placeholders |
 | [`wolfram-starter.wl`](wolfram-starter.wl) | Wolfram package: plate, Helmholtz, two-zone synthesis |
 | [`capstone-deck.md`](capstone-deck.md) | Markdown capstone companion for validator and review |
 | [`capstone-manifest.json`](capstone-manifest.json) | Capstone file map and public-release concerns |
@@ -92,6 +106,8 @@ For the full derivation, family scaling law, and assumptions, see [`design.md`](
 | [`cad/`](cad/) | OpenSCAD parametric master (`cajon-master.scad`) |
 | [`cnc/`](cnc/) | CNC bit + feed strategies for finger-joint, inlay, sound hole |
 | [`jigs/`](jigs/) | Fixture drawings for square assembly and tapa screw layout |
+| [`images/`](images/) | Concept/support image placeholders; future real build photos only after prototype evidence exists |
+| [`data/`](data/) | Measurement-log landing zone for first-build spectral, load, and fit data |
 | [`site/index.html`](site/index.html) | Public build-log site |
 | [`scripts/`](scripts/) | Generators for xlsx, pptx, pdf binaries |
 | [`BUILD.md`](BUILD.md) | How to regenerate the binary deliverables |
@@ -121,20 +137,20 @@ Generated binaries (run `python scripts/build_all.py`):
 
 ## Status &amp; roadmap
 
-- **Design v1 — shipped.** Governing physics, family scaling, BOM/sourcing/cut-list/validation, drawings (sheets 1, 3, 5), CAD master, CNC notes, risks, wolfram starter, build-log site, build scripts.
+- **Design v1 — shipped as pre-build V5 candidate.** Governing physics, family scaling, BOM/sourcing/cut-list/validation, drawings, CAD master, CNC notes, jigs, risks, Wolfram starter, build-log site, build scripts, explorer, and authority register.
 - **First prototype build — pending.** Standard (CJ-S), V1 finger-joint, snare option B.
 - **Tuning calibration — pending first measurement.** Once recorded, the family scaling law gets cross-checked against the data per the empirical-learning loop in the parent `instrument-maker` skill.
 - **Drawings v2 — queued.** Current sheets 01–08 are public-review SVGs; next pass should replace simplified sheets with CAD-exported dimension drawings after the first build review.
 - **Workbook formula revision — queued.** Replace `L = t_back` with `L_eff = t_back + 1.7·r` in `cajon-design-table.xlsx`.
 
-## Round 3 L2 Review Evidence
+## Review Evidence
 
-- `git diff --check` is expected to pass for the Round 3 packet branch.
+- `git diff --check` is expected to pass for the packet branch.
 - `python3 /home/tony/.codex/skills/instrument-maker-v4/scripts/validate_packet.py . --mode root`
   is the root-mode gate before merge review.
-- This packet is L2: design, sourcing, cut list, drawings, CNC notes, risks,
-  validation plan, print packet, and capstone artifacts are present for human
-  review.
+- This packet is a pre-build V5 candidate: design, sourcing, cut list,
+  drawings, CNC notes, jigs, risks, validation plan, print packet, capstone,
+  explorer, and visual authority register are present for human review.
 - Empirical/build gates remain deferred until the Standard CJ-S prototype is
   assembled, measured, and logged in `validation.csv`.
 

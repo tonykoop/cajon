@@ -8,6 +8,19 @@
 
 ---
 
+## Authority boundary
+
+This packet is a pre-build V5 build-packet candidate. The design table,
+OpenSCAD master, jig templates, and reviewed SVG sheets are the current planning
+authority. They are not a substitute for measured panel stock, CNC test cuts,
+seat-load tests, strike-response captures, or snare-onset measurements.
+
+Generated previews, site imagery, visual-BOM layouts, and future concept images
+are support artifacts only. The packet records visual and CAD authority in
+`visual-output-register.csv`; no image or preview should be used to infer panel
+thickness, snare contact geometry, screw positions, joinery tolerances, or CNC
+toolpaths.
+
 ## 1. Intent
 
 Document the cajón as a portfolio-grade parametric instrument, not as one box. The same design sheet drives three sizes (Compact / Standard / Bass) with a single shared geometric law, and the same shell can be realized through four joinery paths and either lineage of snare:
@@ -95,6 +108,10 @@ The shell is a six-sided box. Five of the six faces (top, bottom, two sides, bac
 
 V1 (finger joint) is the recommended first prototype: it tolerates ±0.005″ panel error gracefully, the jig is reusable, and the visible joint complements the inlay.
 
+The tolerance claim is a design target, not a measured result. Validate it with
+scrap finger-joint samples and the square assembly jig before cutting show
+stock.
+
 ---
 
 ## 5. CNC inlay strategy
@@ -156,6 +173,10 @@ Datums for drawings: bottom outside face = primary horizontal datum (Z = 0); bac
 - Slap-zone vs centre-strike spectrum delta (`risks.md` E1 acceptance test)
 - Snare-buzz onset velocity (subjective; recorded per snare option)
 - Sustain T60 of the bass voice
+- Actual panel thickness after milling, tapa thickness after finish, and any
+  local thinning from CNC inlay pockets
+- Finger-joint fit, glue-line closure, diagonal squareness, and seat-load
+  behavior
 
 A second-pass design sheet revision happens after the first prototype is measured. The empirical correction (`f_H_predicted` vs `f_H_measured`) gets logged in `validation.csv`, and any cents-error >50 cents triggers a family-table revisit.
 

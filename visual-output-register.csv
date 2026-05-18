@@ -1,0 +1,17 @@
+artifact_id,path,artifact_kind,role,authority,derived_from,dimension_claim,notes
+DT-001,Cajon-Family-Design.xlsx,design_table,design_table,fabrication,,derived_from_authority,Generated workbook is the current parametric planning authority; production claims still require physical CJ-S validation.
+DT-002,cajon-design-table.xlsx,design_table,design_table,fabrication,,derived_from_authority,Original reference workbook; keep corrected Helmholtz end-correction status visible before presenting as final.
+CAD-001,cad/cajon-master.scad,cad,fabrication_geometry,fabrication,DT-001,derived_from_authority,OpenSCAD master for shell port joint and panel layout; verify with CAD/CAM and scrap cuts before production.
+SVG-001,drawings/01-family-front-elevation.svg,svg_preview,derived_preview,derived_preview,DT-001;CAD-001,derived_from_authority,Review drawing only; dimensions trace to workbook/OpenSCAD.
+SVG-002,drawings/02-standard-isometric.svg,svg_preview,derived_preview,derived_preview,DT-001;CAD-001,derived_from_authority,Exploded review drawing for CJ-S; not a CAM file.
+SVG-003,drawings/03-back-panel-detail.svg,svg_preview,derived_preview,derived_preview,DT-001;CAD-001,derived_from_authority,Back-panel sound-hole review drawing; cut authority remains CAD/CAM plus measured stock.
+SVG-004,drawings/04-tapa-screw-pattern.svg,svg_preview,derived_preview,derived_preview,DT-001;CAD-001,derived_from_authority,Tapa screw template preview; torque and slap-zone behavior require physical validation.
+SVG-005,drawings/05-finger-joint-detail.svg,svg_preview,derived_preview,derived_preview,CAD-001,derived_from_authority,Finger-joint detail; validate with scrap fit before show stock.
+SVG-006,drawings/06-dovetail-detail.svg,svg_preview,derived_preview,derived_preview,CAD-001,derived_from_authority,Dovetail variant review detail; not first-prototype authority.
+SVG-007,drawings/07-snare-mount-detail.svg,svg_preview,derived_preview,derived_preview,DT-001;CAD-001,derived_from_authority,Snare mount detail; snare response and preload are measurement-gated.
+SVG-008,drawings/08-cnc-inlay-zone.svg,svg_preview,derived_preview,derived_preview,CAD-001,derived_from_authority,CNC inlay zone preview; verify pocket depth against actual panel thickness.
+JIG-001,jigs/square-assembly-fixture.svg,svg_preview,measurement_template,derived_preview,DT-001;CAD-001,derived_from_authority,Fixture template preview for squareness checks; validate diagonal measurements during dry fit.
+JIG-002,jigs/tapa-screw-template.svg,svg_preview,measurement_template,derived_preview,DT-001;CAD-001,derived_from_authority,Tapa screw template preview; screw torque and response remain build-validation items.
+PDF-001,print-packet.pdf,drawing_pdf,dimensioned_drawing,derived_preview,DT-001;CAD-001,derived_from_authority,Printable packet derived from current sources; not a measured production release.
+IMG-001,images/README.md,photo_reference,build_log,reference_only,,none,Placeholder index for future real build photos; no dimensional authority.
+DATA-001,data/README.md,measurement_template,measurement_template,fabrication,,derived_from_authority,Measurement landing zone defining evidence required before readiness promotion.

@@ -2,6 +2,11 @@
 
 The `drawings/` folder ships dimensioned SVGs for the family. Each SVG follows Heifer Zephyr's standard title block (lower-right) with: drawing name, sheet number, scale, units, project (Cajón Family), date, revision, drafter (Tony Koop). All dimensions in inches unless noted.
 
+Visual authority is tracked in `visual-output-register.csv`. The SVG sheets and
+jig templates are review/manufacturing-planning artifacts derived from the
+design table and OpenSCAD source; production CNC, panel-thickness, snare-contact,
+and strike-response claims still require physical validation.
+
 ## Required drawings
 
 | File                              | Sheet | Title                                                | Notes                                       |
