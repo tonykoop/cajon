@@ -1,6 +1,6 @@
 # Flamenco Rumba — Songsheet
 
-**Tempo:** 110 BPM  **Meter:** 4/4  **Difficulty:** ★★☆  
+**Tempo:** 110 BPM  **Meter:** 4/4  **Difficulty:** ★★☆
 **Tradition:** Afro-Cuban/Flamenco (traditional, public domain)
 
 ## Clave pattern (right hand)

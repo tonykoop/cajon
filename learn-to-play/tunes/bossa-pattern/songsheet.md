@@ -1,6 +1,6 @@
 # Bossa Nova Pattern — Songsheet
 
-**Tempo:** 120 BPM  **Meter:** 4/4  **Difficulty:** ★★★  
+**Tempo:** 120 BPM  **Meter:** 4/4  **Difficulty:** ★★★
 **Tradition:** Brazilian bossa nova (traditional pattern, public domain)
 
 ## Full pattern (one bar, 16th-note grid)
