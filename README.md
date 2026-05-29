@@ -38,6 +38,11 @@ design table, OpenSCAD master, SVG review drawings, CNC/jig notes, print packet,
 capstone deck, and explorer, but it is not a measured or production-ready
 release yet.
 
+**Blender render scaffolding in place** (Refs #4): `cad/mcp-session-log.md`,
+`visual-output-register.csv` render rows, and `images/render-brief.md` are
+committed. Actual PNG renders remain `pending_measurement` until a Blender
+MCP session runs via Claude Desktop and updates the session log.
+
 Fabrication authority is limited to the named design table, OpenSCAD source,
 fixture templates, and reviewed drawing set listed in
 `visual-output-register.csv`. Snare response, panel-thickness behavior, joinery

@@ -15,3 +15,9 @@ JIG-002,jigs/tapa-screw-template.svg,svg_preview,measurement_template,derived_pr
 PDF-001,print-packet.pdf,drawing_pdf,dimensioned_drawing,derived_preview,DT-001;CAD-001,derived_from_authority,Printable packet derived from current sources; not a measured production release.
 IMG-001,images/README.md,photo_reference,build_log,reference_only,,none,Placeholder index for future real build photos; no dimensional authority.
 DATA-001,data/README.md,measurement_template,measurement_template,fabrication,,derived_from_authority,Measurement landing zone defining evidence required before readiness promotion.
+RENDER-HERO-001,images/hero-render.png,render_preview,concept,pending_measurement,CAD-001,none,Planned hero render via Blender MCP; pending session execution — see cad/mcp-session-log.md
+RENDER-EXPLODE-001,images/assembly-explode.png,render_preview,concept,pending_measurement,CAD-001,none,Planned assembly explode render via Blender MCP; panels offset along face normals
+RENDER-MAT-001,images/material-study/birch-ply.png,render_preview,concept,pending_measurement,CAD-001,none,Planned material study — birch ply variant; pending Blender MCP session
+RENDER-MAT-002,images/material-study/walnut.png,render_preview,concept,pending_measurement,CAD-001,none,Planned material study — walnut variant; pending Blender MCP session
+RENDER-MAT-003,images/material-study/painted-mdf.png,render_preview,concept,pending_measurement,CAD-001,none,Planned material study — painted MDF variant; pending Blender MCP session
+SCENE-001,images/blender-scene.blend,tool_source,blender_scene,pending_measurement,CAD-001,none,Planned Blender scene with reproducible camera + lighting; required by issue #4 acceptance criteria
