@@ -76,5 +76,16 @@
     "Confirm workbook Helmholtz cells use the corrected end correction.",
     "Mark all acoustic values as predicted until validation.csv contains measured rows.",
     "Validate snare preload, panel thickness after milling, joinery fit, and strike-response measurements before production-ready claims."
-  ]
+  ],
+  "engineering": {
+    "wolfram": [
+      {
+        "source_file": "percussion/cajon/cajon-starter.wl",
+        "cloud_path": "Musical_Instruments/percussion/cajon/cajon-starter.wl",
+        "cloud_url": "https://www.wolframcloud.com/obj/wrfcoin/Musical_Instruments/percussion/cajon/cajon-starter.wl",
+        "permission": "Public-Execute",
+        "kind": "acoustics-starter"
+      }
+    ]
+  }
 }
