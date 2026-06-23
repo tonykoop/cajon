@@ -1,0 +1,164 @@
+{
+  "version": "0.1",
+  "generated_at": "2026-06-21",
+  "source_repo": "tonykoop/cajon",
+  "notes": [
+    "V5 percussion export \u2014 artifacts reflect current repo state.",
+    "Authority labels follow instrument-maker v4.5 DXF-first visual authority guard.",
+    "Promote artifacts from derived_preview to fabrication only after reviewed DXF or measured build."
+  ],
+  "packets": [
+    {
+      "id": "cajon",
+      "display_name": "Caj\u00f3n \u2014 Family Design Packet",
+      "family": "box drum \u00b7 idiophone\u2013membranophone hybrid",
+      "repo_path": ".",
+      "status_line": "Status: Design v1 \u2014 first prototype pending",
+      "readiness_label": "Design v1 \u2014 first prototype pending",
+      "summary": "Parametric three-member box-drum family (Compact / Standard / Bass) in four manufacturing variants with optional guitar-string snare. Peruvian / flamenco caj\u00f3n engineering baseline.",
+      "site_entry": "explorer.html",
+      "artifacts": [
+        {
+          "id": "README-md",
+          "kind": "README",
+          "label": "Packet README",
+          "path": "README.md",
+          "authority": "reference_only",
+          "preview_role": "packet_card",
+          "runtime_state": "not_applicable",
+          "notes": "Reader-facing summary and repo map."
+        },
+        {
+          "id": "design-md",
+          "kind": "design",
+          "label": "Design sheet",
+          "path": "design.md",
+          "authority": "fabrication",
+          "preview_role": "detail_link",
+          "runtime_state": "not_applicable",
+          "notes": "Governing acoustic model, parametric dimensions, and material assumptions."
+        },
+        {
+          "id": "bom-csv",
+          "kind": "bom",
+          "label": "Bill of materials",
+          "path": "bom.csv",
+          "authority": "fabrication",
+          "preview_role": "detail_link",
+          "runtime_state": "not_applicable",
+          "notes": "Part list with quantities, materials, and estimated cost."
+        },
+        {
+          "id": "sourcing-csv",
+          "kind": "sourcing",
+          "label": "Sourcing list",
+          "path": "sourcing.csv",
+          "authority": "fabrication",
+          "preview_role": "detail_link",
+          "runtime_state": "not_applicable",
+          "notes": "Supplier options, part numbers, and lead-time notes."
+        },
+        {
+          "id": "cut-list-csv",
+          "kind": "cut_list",
+          "label": "Cut list",
+          "path": "cut-list.csv",
+          "authority": "fabrication",
+          "preview_role": "detail_link",
+          "runtime_state": "not_applicable",
+          "notes": "Stock dimensions and cut operations for each part."
+        },
+        {
+          "id": "validation-csv",
+          "kind": "validation",
+          "label": "Validation table",
+          "path": "validation.csv",
+          "authority": "reference_only",
+          "preview_role": "detail_link",
+          "runtime_state": "not_applicable",
+          "notes": "Predicted vs measured values; names remaining measurement gates."
+        },
+        {
+          "id": "assembly-manual-md",
+          "kind": "assembly_manual",
+          "label": "Assembly manual",
+          "path": "assembly-manual.md",
+          "authority": "fabrication",
+          "preview_role": "detail_link",
+          "runtime_state": "not_applicable",
+          "notes": "Step-by-step build sequence with torque and fit notes."
+        },
+        {
+          "id": "risks-md",
+          "kind": "risks",
+          "label": "Risk register",
+          "path": "risks.md",
+          "authority": "reference_only",
+          "preview_role": "detail_link",
+          "runtime_state": "not_applicable",
+          "notes": "Acoustic, structural, ergonomic, supply, and fit/finish risks each with a verification test."
+        },
+        {
+          "id": "supplier-rfq-md",
+          "kind": "supplier_rfq",
+          "label": "Supplier RFQ",
+          "path": "supplier-rfq.md",
+          "authority": "fabrication",
+          "preview_role": "detail_link",
+          "runtime_state": "not_applicable",
+          "notes": "Request-for-quote template for outsourced or purchased parts."
+        },
+        {
+          "id": "visual-bom-brief-md",
+          "kind": "visual_bom_brief",
+          "label": "Visual BOM brief",
+          "path": "visual-bom-brief.md",
+          "authority": "derived_preview",
+          "preview_role": "detail_link",
+          "runtime_state": "not_applicable",
+          "notes": "Visual assembly overview; images are concept-only, not dimensional authority."
+        },
+        {
+          "id": "drawing-brief-md",
+          "kind": "drawing_brief",
+          "label": "Drawing brief",
+          "path": "drawing-brief.md",
+          "authority": "reference_only",
+          "preview_role": "detail_link",
+          "runtime_state": "not_applicable",
+          "notes": "Required drawing set, datum plan, and view list for DXF-authority geometry."
+        },
+        {
+          "id": "photo-shotlist-md",
+          "kind": "photo_shotlist",
+          "label": "Photo shot list",
+          "path": "photo-shotlist.md",
+          "authority": "reference_only",
+          "preview_role": "detail_link",
+          "runtime_state": "not_applicable",
+          "notes": "Required shots per build stage for build-log documentation."
+        },
+        {
+          "id": "visual-output-register-csv",
+          "kind": "visual_output_register",
+          "label": "Visual output register",
+          "path": "visual-output-register.csv",
+          "authority": "reference_only",
+          "preview_role": "detail_link",
+          "runtime_state": "not_applicable",
+          "notes": "Records which artifacts are previews versus controlling geometry."
+        },
+        {
+          "id": "wolfram-model",
+          "kind": "wolfram_model",
+          "label": "Wolfram model \u2014 cajon-starter.wl",
+          "path": "https://www.wolframcloud.com/obj/wrfcoin/Musical_Instruments/percussion/cajon/cajon-starter.wl",
+          "authority": "reference_only",
+          "preview_role": "runtime_note",
+          "runtime_state": "source_only",
+          "notes": "Acoustic physics source. Source-only \u2014 no executed runtime output claimed."
+        }
+      ]
+    }
+  ]
+}

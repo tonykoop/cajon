@@ -85,7 +85,7 @@ exampleStdErr = cents[92, fHStd]
 
 (* === Manipulate: design a cajón family member interactively === *)
 
-Manipulate[
+cajonExplorer = Manipulate[
   Module[{fH, fP, Vol, Area, Leff},
     Vol  = (W - 2*bT) * (D - 2*bT) * (H - topT - backTh);
     Area = Pi * (holeDia/2)^2;
