@@ -22,3 +22,4 @@ RENDER-MAT-002,images/material-study/walnut.png,render_preview,concept,pending_m
 RENDER-MAT-003,images/material-study/painted-mdf.png,render_preview,concept,pending_measurement,CAD-001,none,Planned material study — painted MDF variant; pending Blender MCP session
 SCENE-001,images/blender-scene.blend,tool_source,blender_scene,pending_measurement,CAD-001,none,Planned Blender scene with reproducible camera + lighting; required by issue #4 acceptance criteria
 IMG-MACRO-001,images/macro/finger-joint-inlay-corner.png,image_gen_2_output,concept,concept_only,,none,Procedurally generated concept macro close-up of corner box-joints and maple/yellowheart geometric inlay; no dimensional authority.
+WL-001,cajon-starter.wl,wolfram_source,wolfram,derived_preview,,source_only,Wolfram acoustic starter (Helmholtz port / panel modes); source-only (not executed). L2 evidence.

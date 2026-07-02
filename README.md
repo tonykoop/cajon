@@ -1,5 +1,7 @@
 # Cajón — Family Design Packet
 
+**Status:** L2 V5 build-packet candidate — pre-build (not a measured or production-ready release yet; see "Current status" below).
+
 **A parametric three-member box-drum family.** The Peruvian / flamenco cajón as a coordinated set of three sizes (Compact / Standard / Bass) in four interchangeable manufacturing variants, with an optional snare lineage.
 
 Part of the [tonykoop/instrument-maker](https://github.com/tonykoop/instrument-maker) catalogue. Heifer Zephyr Instruments — Tony Koop.
@@ -109,6 +111,7 @@ For the full derivation, family scaling law, and assumptions, see [`design.md`](
 | [`print-packet.html`](print-packet.html) | Browser-printable shop packet |
 | [`drawings/`](drawings/) | Dimensioned SVG drawings (sheets 1–8) |
 | [`cad/`](cad/) | OpenSCAD parametric master (`cajon-master.scad`) |
+| [`evolution/`](evolution/) | StudioPipeline Stage-0 intake (design intent, master manifest, revisions) |
 | [`cnc/`](cnc/) | CNC bit + feed strategies for finger-joint, inlay, sound hole |
 | [`jigs/`](jigs/) | Fixture drawings for square assembly and tapa screw layout |
 | [`images/`](images/) | Concept/support image placeholders; future real build photos only after prototype evidence exists |

@@ -1,0 +1,34 @@
+{
+  "product": "cajon",
+  "pipeline": "studiopipeline:evolution-pipeline",
+  "stage": "0-intake",
+  "master_revision": "rev-A (pre-commit intake, 2026-07-01)",
+  "generated": "2026-07-01",
+  "cad_masters": [
+    {
+      "path": "cad/cajon-master.scad",
+      "format": "openscad-source",
+      "sha256": "c33970154a3aaa114a9b48958d318e404c76e641e9f412e323f79ac2b02813f1",
+      "authority": "fabrication",
+      "lossy": false,
+      "notes": "Existing OpenSCAD family master (shell, port joint, panel layout). Kept as-is this pass; renders clean (Simple: yes, exit 0). Production claims still require physical CJ-S validation."
+    },
+    {
+      "path": "Cajon-Family-Design.xlsx",
+      "format": "design-table",
+      "sha256": "d51e6aaaaa010b24bf17f511e03ac4ad37278c9b550844330ec9c4292a9f9eab",
+      "authority": "fabrication",
+      "lossy": false,
+      "notes": "Current parametric planning authority (three-member family sizing law), ingesting the CSVs."
+    },
+    {
+      "path": "cajon-starter.wl",
+      "format": "wolfram-source",
+      "sha256": "f3e03f48f917bf3c72d0d178a743e087d46b4a3ef3f1e7036a871f672e95c92f",
+      "authority": "derived_preview",
+      "lossy": false,
+      "notes": "Wolfram acoustic starter (plate, Helmholtz, two-zone synthesis); source-only (not executed). L2 evidence."
+    }
+  ],
+  "notes": "OpenSCAD master + generated design workbook are the current masters; no STEP export yet. Helmholtz end-correction correction (risks A2) is tracked. Gate A (Alpha workspace compile) not yet run."
+}
