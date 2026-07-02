@@ -32,3 +32,6 @@ Blender MCP requires Claude Desktop. When a session runs:
 2. Set `authority_result` to `concept_only` (renders are not dimensional authority).
 3. Set `review_status` to `self_checked`.
 4. Update `visual-output-register.csv` rows to match.
+
+| fable-v5-refresh-2026-07-01 | claude-code (Fable 5) | Cajon-Family-Design.xlsx | Cajon-Family-Design.xlsx, cajon-design-table.xlsx, data/README.md | packet_refresh | fabrication | self_checked | V5 refresh pass; tabular design-table + measurement-template data reviewed against family design. No dimension changes made. Provenance rows added to satisfy V5 fabrication-artifact logging (design tables + data measurement landing zone). |
+| fable-v5-refresh-2026-07-01 | claude-code (Fable 5) + OpenSCAD CLI | Cajon-Family-Design.xlsx | cad/cajon-master.scad | cad_review | fabrication | self_checked | Existing OpenSCAD master kept (not rewritten). openscad render check: pass (Simple: yes, exit 0). |
